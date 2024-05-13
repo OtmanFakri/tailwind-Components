@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modal</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+    </head>
+    <body style="min-height: 610px;" class="bg-gray-300 py-8 flex items-center justify-center">
+        <div class="pt-16">
+            <button id="button" onclick="modalHandler(true)" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:outline-none py-2 px-10 rounded bg-indigo-600 hover:bg-indigo-700 text-white">Open Modal</button>
+        </div>
+        <div class="w-11/12 max-w-lg bg-white shadow rounded absolute top-20" id="modal">
+            <div class="p-3 md:p-6 border-b border-gray-200 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div tabindex="0" aria-label="document icon" role="img" class="focus:outline-none w-11 h-11 bg-indigo-50 rounded-sm flex items-center justify-center">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg1.svg" alt="file"/>
+                        
+                    </div> 
+                    <div class="pl-3">
+                        <p tabindex="0" class="focus:outline-none text-sm font-medium leading-normal text-gray-800">Brainstorming Session Summary</p>
+                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 pt-1">Create, edit, and share this document</p>
+                    </div>
+                </div>
+                <button role="button" aria-label="close modal" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none rounded-md cursor-pointer" onclick="modalHandler(false)">
+                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg2.svg" alt="cross"/>
+                   
+                </button>
+            </div>
+            <div class="p-3 md:p-6 border-b border-gray-200">
+                <div class="w-full sm:flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="pl-3">
+                            <p tabindex="0" class="focus:outline-none text-sm font-medium leading-normal text-gray-800">Robert Watson</p>
+                            <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-2 text-gray-600">Watson.Robert@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 sm:mt-0 flex items-center">
+                        <div class="pr-2 bg-gray-100 rounded flex items-center justify-between">
+                            <select aria-label="Select an option" class="focus:text-indigo-600 w-36 text-xs font-medium leading-3 text-gray-600 appearance-none bg-gray-100 focus:outline-none p-2">
+                                <option class="text-xs font-medium leading-3 text-gray-600">Owner</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Edit access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">View access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Comment access</option>
+                            </select>
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg3.svg" alt="chevron down"/>
+                           
+                        </div>
+                        <div tabindex="0" aria-label="drag drop icon" role="img" class="focus:outline-none bg-gray-100 rounded w-6 h-7 ml-2 flex items-center justify-center">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg4.svg" alt="options icon"/>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:flex items-center justify-between mt-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="pl-3">
+                            <p tabindex="0" class="focus:outline-none text-sm font-medium leading-normal text-gray-800">Jeramy Doe</p>
+                            <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-2 text-gray-600">Watson.Robert@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 sm:mt-0 flex items-center">
+                        <div class="pr-2 bg-gray-100 rounded flex items-center justify-between">
+                            <select aria-label="Select an option" class="focus:text-indigo-600 w-36 text-xs font-medium leading-3 text-gray-600 appearance-none bg-gray-100 focus:outline-none p-2">
+                                <option class="text-xs font-medium leading-3 text-gray-600">Edit access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">View access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Comment access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Owner</option>
+                            </select>
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg3.svg" alt="chevron down"/>
+                        </div>
+                        <div tabindex="0" aria-label="drag drop icon" role="img" class="focus:outline-none bg-gray-100 rounded w-6 h-7 ml-2 flex items-center justify-center">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg4.svg" alt="options icon"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden w-full sm:flex items-center justify-between mt-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="pl-3">
+                            <p tabindex="0" class="focus:outline-none text-sm font-medium leading-normal text-gray-800">Monica Geller</p>
+                            <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-2 text-gray-600">Watson.Robert@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 sm:mt-0 flex items-center">
+                        <div class="pr-2 bg-gray-100 rounded flex items-center justify-between">
+                            <select aria-label="Select an option" class="focus:text-indigo-600 w-36 text-xs font-medium leading-3 text-gray-600 appearance-none bg-gray-100 focus:outline-none p-2">
+                                <option class="text-xs font-medium leading-3 text-gray-600">View access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Edit access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Comment access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Owner</option>
+                            </select>
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg3.svg" alt="chevron down"/>
+                        </div>
+                        <div tabindex="0" aria-label="drag drop icon" role="img" class="focus:outline-none bg-gray-100 rounded w-6 h-7 ml-2 flex items-center justify-center">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg4.svg" alt="options icon"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden w-full sm:flex items-center justify-between mt-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="pl-3">
+                            <p tabindex="0" class="focus:outline-none text-sm font-medium leading-normal text-gray-800">Keaton Will</p>
+                            <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-2 text-gray-600">Watson.Robert@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 sm:mt-0 flex items-center">
+                        <div class="pr-2 bg-gray-100 rounded flex items-center justify-between">
+                            <select aria-label="Select an option" class="focus:text-indigo-600 w-36 text-xs font-medium leading-3 text-gray-600 appearance-none bg-gray-100 focus:outline-none p-2">
+                                <option class="text-xs font-medium leading-3 text-gray-600">Comment access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">View access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Edit access</option>
+                                <option class="text-xs font-medium leading-3 text-gray-600">Owner</option>
+                            </select>
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg3.svg" alt="chevron down"/>
+                        </div>
+                        <div tabindex="0" aria-label="drag drop icon" role="img" class="focus:outline-none bg-gray-100 rounded w-6 h-7 ml-2 flex items-center justify-center">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg4.svg" alt="options icon"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 md:p-6 sm:flex items-center justify-between">
+                <div class="bg-indigo-100 rounded p-3">
+                    <div tabindex="0" aria-label="copy link" class="focus:outline-none flex items-center">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg5.svg" alt="attach"/>
+                       
+                        <p class="text-xs pl-3 pr-4 border-r border-indigo-300 leading-3 text-indigo-700">www.figma.com/ksif02984-1..</p>
+                        <p class="text-xs font-semibold pl-3 leading-3 text-indigo-700 cursor-pointer">COPY</p>
+                    </div>
+                </div>
+                <div class="flex sm:block w-full sm:w-auto justify-end mt-6 sm:mt-0">
+                    <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 text-xs font-semibold py-3 px-6 bg-indigo-700 rounded focus:outline-none hover:bg-indigo-600 leading-3 text-white">Done</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let modal = document.getElementById("modal");
+            function modalHandler(val) {
+                if (val) {
+                    fadeIn(modal);
+                } else {
+                    fadeOut(modal);
+                }
+            }
+            function fadeOut(el) {
+                el.style.opacity = 1;
+                (function fade() {
+                    if ((el.style.opacity -= 0.1) < 0) {
+                        el.style.display = "none";
+                    } else {
+                        requestAnimationFrame(fade);
+                    }
+                })();
+            }
+            function fadeIn(el, display) {
+                el.style.opacity = 0;
+                el.style.display = display || "block";
+                (function fade() {
+                    let val = parseFloat(el.style.opacity);
+                    if (!((val += 0.2) > 1)) {
+                        el.style.opacity = val;
+                        requestAnimationFrame(fade);
+                    }
+                })();
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

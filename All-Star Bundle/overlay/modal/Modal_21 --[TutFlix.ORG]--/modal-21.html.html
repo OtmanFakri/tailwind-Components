@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.tuk.dev/dist/css/tuk-dev.css" rel="stylesheet" />
+
+        <title>Document</title>
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+ 
+    <body style="min-height: 390px">
+        <div class="py-12 dark:bg-black bg-gray-700 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0" id="modal">
+            <div role="alert" class="container mx-auto w-11/12 md:w-2/3 max-w-lg flex justify-center">
+                <div class="relative w-80 rounded shadow-lg pt-8 pb-6 px-6 dark:bg-gray-800 bg-white">
+                    <div class="flex flex-col items-center justify-center">
+                        <p class="text-lg font-bold leading-none text-gray-800 dark:text-gray-100">Do you like our Work?</p>
+                        <p class="mt-3 mb-6 text-sm leading-tight text-center text-gray-500 dark:text-gray-400">We work really hard to deliver you the best paper products available in Scranton, we would love to hear what you think about us!</p>
+                        <div class="flex justify-between items-center w-full">
+                            <button class="focus:outline-none">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Modal_21-svg1.svg" alt="yellow star"/>
+                                
+                               
+                            </button>
+                            <button class="focus:outline-none">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Modal_21-svg1.svg" alt="yellow star"/>
+                            </button>
+                            <button class="focus:outline-none">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Modal_21-svg1.svg" alt="yellow star"/>
+                            </button>
+                            <button class="focus:outline-none">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Modal_21-svg1.svg" alt="yellow star"/>
+                            </button>
+                            <button class="focus:outline-none">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Modal_21-svg1.svg" alt="yellow star"/>
+                            </button>
+                        </div>
+                        <button class="px-14 py-3 bg-indigo-700 dark:bg-indigo-600 hover:bg-opacity-80 focus:outline-none mt-8 rounded text-xs font-semibold leading-3 text-gray-100">Submit</button>
+                    </div>
+                    <div class="cursor-pointer absolute top-0 right-0 m-3 dark:text-gray-100 text-gray-400 text-gray-600 transition duration-150 ease-in-out" onclick="modalHandler()">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Modal_21-svg3.svg" alt="cross"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center py-12" id="button">
+            <button class="focus:outline-none mx-auto transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-4 sm:px-8 py-2 text-xs sm:text-sm" onclick="modalHandler(true)">Open Modal</button>
+        </div>
+        <script src="./index.js"></script>
+        <script>
+            let modal = document.getElementById("modal");
+            function modalHandler(val) {
+                if (val) {
+                    fadeIn(modal);
+                } else {
+                    fadeOut(modal);
+                }
+            }
+            function fadeOut(el) {
+                el.style.opacity = 1;
+                (function fade() {
+                    if ((el.style.opacity -= 0.1) < 0) {
+                        el.style.display = "none";
+                    } else {
+                        requestAnimationFrame(fade);
+                    }
+                })();
+            }
+            function fadeIn(el, display) {
+                el.style.opacity = 0;
+                el.style.display = display || "block";
+                (function fade() {
+                    let val = parseFloat(el.style.opacity);
+                    if (!((val += 0.2) > 1)) {
+                        el.style.opacity = val;
+                        requestAnimationFrame(fade);
+                    }
+                })();
+            }
+        </script>
+    </body>
+</html>

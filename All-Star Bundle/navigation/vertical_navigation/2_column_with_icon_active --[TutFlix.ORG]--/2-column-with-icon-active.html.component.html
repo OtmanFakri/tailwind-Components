@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vertical Navigation</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <!-- <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script> -->
+    </head>
+    <body class="dark:bg-gray-900" style="font-family: 'Lato', sans-serif; min-height: 318px">
+        <!-- Vertical navigation starts -->
+        <div class="flex flex-no-wrap">
+            <dh-component>
+                <div class="absolute border-r border-gray-100 sm:relative h-full bg-gray-100 dark:bg-gray-700 dark:border-gray-700 z-20 p-4">
+                    <div class="flex w-full">
+                        <div role="tablist" aria-orientation="vertical" class="w-1/4 flex justify-center flex-col w-full">
+                            <button role="tab" aria-selected="true" aria-label="open menu"  class="focus:outline-none focus:bg-gray-300 icon icon-tabler icon-tabler-menu-2 cursor-pointer mt-1" onclick="sidebarHandler()" onfocus="sidebarHandler()">                            
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-columns-with-icon-active-svg1.svg" alt="menu" />
+                        </button>
+    
+                            <div  class="rounded py-8">
+                                <a aria-label="dashboard" tabindex="0"  role="tab" aria-selected="true" class="cursor-pointer text-indigo-700 dark:text-indigo-400 text-sm leading-3 tracking-normal pt-4 hover:text-indigo-400 focus:text-indigo-400 focus:outline-none"s>
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <rect x="4" y="4" width="6" height="6" rx="1"></rect>
+                                            <rect x="14" y="4" width="6" height="6" rx="1"></rect>
+                                            <rect x="4" y="14" width="6" height="6" rx="1"></rect>
+                                            <rect x="14" y="14" width="6" height="6" rx="1"></rect>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a aria-label="products" tabindex="0" role="tab" aria-selected="true" class="cursor-pointer text-gray-800 dark:text-white  text-sm leading-3 tracking-normal mt-6 pt-2 hover:text-indigo-400 focus:text-indigo-400 focus:outline-none flex items-center">
+                                    <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-puzzle" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a aria-label="performance" tabindex="0"  role="tab" aria-selected="true" class="cursor-pointer text-gray-800 dark:text-white  text-sm leading-3 tracking-normal mt-6 pt-2 hover:text-indigo-400 flex items-center focus:text-indigo-400 focus:outline-none">
+                                    <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
+                                            <circle cx="12" cy="12" r="9"></circle>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a aria-label="deliverables" role="tab" aria-selected="true"  tabindex="0"  class="cursor-pointer text-gray-800 dark:text-white  text-sm leading-3 tracking-normal mt-6 pt-2 hover:text-indigo-400 flex items-center focus:text-indigo-400 focus:outline-none">
+                                    <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <polyline points="7 8 3 12 7 16"></polyline>
+                                            <polyline points="17 8 21 12 17 16"></polyline>
+                                            <line x1="14" y1="4" x2="10" y2="20"></line>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-3/4 flex justify-start flex-col pr-12 transition duration-150 ease-in-out" id="mobile-nav">
+                            <span role="banner">
+                            <a tabindex="-1"   class="focus:outline-none mt-2">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-columns-with-icon-active-svg2.svg" alt="logo" />
+                            </a>
+                        </span>
+                            <div  aria-orientation="vertical" class="rounded py-8">
+                                <a  tabindex="0" class="focus:underline focus:text-indigo-400 cursor-pointer text-indigo-700 dark:text-indigo-400 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                                    <span class="ml-2">Dashboard</span>
+                                </a>
+                                <a tabindex="0" class="focus:underline focus:text-indigo-400 cursor-pointer text-gray-600 dark:text-gray-200 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex items-center">
+                                    <span class="ml-2">Products</span>
+                                </a>
+                                <a tabindex="0" class="focus:underline focus:text-indigo-400 cursor-pointer text-gray-600 dark:text-gray-200 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                    <span class="ml-2">Performance</span>
+                                </a>
+                                <a tabindex="0" class="focus:underline focus:text-indigo-400 cursor-pointer text-gray-600 dark:text-gray-200 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                    <span class="ml-2">Deliverables</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full"></div>
+                <script>
+                    var sideBar = document.getElementById("mobile-nav");
+                    function sidebarHandler() {
+                        sideBar.classList.toggle("hidden");
+                    }
+                </script>
+                <script src="./index.js"></script>
+            </dh-component>
+        </div>
+        <!-- Vertical navigation ends -->
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step Navigation</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="flex justify-center bg-white px-8 py-12">
+
+    <fieldset x-data="window.Components.radioGroup({ initialCheckedIndex: 0 })">
+
+      <legend class="text-base font-semibold leading-6 text-gray-900">Select a mailing list</legend>
+
+      <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
+
+        <label
+          x-radio-group-option
+          :class="{
+            'border-transparent': (value === 'Newsletter'), 
+            'border-gray-300': !(value === 'Newsletter')
+          }"
+        >
+
+          <input
+            type="radio" 
+            x-model="value"
+            x-on:click="active = value"
+            name="project-type" 
+            value="Newsletter"
+            class="sr-only" 
+            aria-labelledby="project-type-0-label"
+            aria-describedby="project-type-0-description-0 project-type-0-description-1"
+          >
+
+          <span class="flex flex-1">
+            <span class="flex flex-col">
+              <span id="project-type-0-label" class="block text-sm font-medium text-gray-900">Newsletter</span>
+              <span id="project-type-0-description-0" class="mt-1 flex items-center text-sm text-gray-500">Last message sent an hour ago</span>
+              <span id="project-type-0-description-1" class="mt-6 text-sm font-medium text-gray-900">621 users</span>
+            </span>
+          </span>
+
+          <!-- Rest of label -->
+
+        </label>
+
+        <label
+          x-radio-group-option
+          :class="{
+            'border-transparent': (value === 'Newsletter2'),
+            'border-gray-300': !(value === 'Newsletter2')  
+          }"
+        >
+
+          <input
+            type="radio"
+            x-model="value"
+            x-on:click="active = value" 
+            name="project-type"
+            value="Newsletter2"
+            class="sr-only"
+            aria-labelledby="project-type-1-label"
+            aria-describedby="project-type-1-description-0 project-type-1-description-1"  
+          >
+
+          <!-- Rest of label -->
+
+        </label>
+
+      </div>
+
+    </fieldset>
+
+  </div>
+
+</body>
+</html>

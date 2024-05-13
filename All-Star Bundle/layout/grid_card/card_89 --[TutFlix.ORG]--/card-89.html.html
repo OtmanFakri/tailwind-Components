@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card 89</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-black flex justify-center py-8 sm:px-6 px-4" style="min-height: 600px">
+        <div class="overflow-x-auto">
+            <div class="max-w-3xl rounded shadow"> 
+                <table class="w-full">
+                    <thead class="dark:bg-gray-900 bg-gray-100">
+                        <td tabindex="0" class="focus:outline-none text-xs font-semibold text-gray-800 dark:text-gray-100 uppercase sm:py-8 py-4 sm:pl-6 pl-4">
+                            <div class="flex items-center">
+                                Company
+                                <div onkeypress="dropdownHandler(this)" tabindex="0" class="text-gray-300 focus:text-indigo-600 focus:outline-none pl-24 relative cursor-pointer" onclick="dropdownHandler(this)">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="25" viewBox="0 0 14 25" fill="none">
+                                        <path d="M10.9083 9.15817C10.7916 9.27484 10.675 9.33317 10.5 9.33317C10.325 9.33317 10.2083 9.27484 10.0916 9.15817L6.99996 6.0665L3.90829 9.15817C3.67496 9.3915 3.32496 9.3915 3.09163 9.15817C2.85829 8.92484 2.85829 8.57484 3.09163 8.3415L6.59163 4.8415C6.82496 4.60817 7.17496 4.60817 7.40829 4.8415L10.9083 8.3415C11.1416 8.57484 11.1416 8.92484 10.9083 9.15817Z" fill="currentColor" />
+                                        <path d="M10.9083 16.6582L7.40829 20.1582C7.29163 20.2748 7.17496 20.3332 6.99996 20.3332C6.82496 20.3332 6.70829 20.2748 6.59163 20.1582L3.09163 16.6582C2.85829 16.4248 2.85829 16.0748 3.09163 15.8415C3.32496 15.6082 3.67496 15.6082 3.90829 15.8415L6.99996 18.9332L10.0916 15.8415C10.325 15.6082 10.675 15.6082 10.9083 15.8415C11.1416 16.0748 11.1416 16.4248 10.9083 16.6582Z" fill="currentColor" />
+                                    </svg>
+                                    <ul class="hidden mt-1 absolute -ml-12 bg-white rounded shadow">
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">edit</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">add</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">Select</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td tabindex="0" class="focus:outline-none text-xs font-semibold text-gray-800 dark:text-gray-100 pl-6 uppercase">
+                            <div class="flex items-center">
+                                Category
+                                <div onkeypress="dropdownHandler(this)"  tabindex="0" class="text-gray-300 focus:outline-none focus:text-indigo-600 pl-16 relative cursor-pointer" onclick="dropdownHandler(this)">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="25" viewBox="0 0 14 25" fill="none">
+                                        <path d="M10.9083 9.15817C10.7916 9.27484 10.675 9.33317 10.5 9.33317C10.325 9.33317 10.2083 9.27484 10.0916 9.15817L6.99996 6.0665L3.90829 9.15817C3.67496 9.3915 3.32496 9.3915 3.09163 9.15817C2.85829 8.92484 2.85829 8.57484 3.09163 8.3415L6.59163 4.8415C6.82496 4.60817 7.17496 4.60817 7.40829 4.8415L10.9083 8.3415C11.1416 8.57484 11.1416 8.92484 10.9083 9.15817Z" fill="currentColor" />
+                                        <path d="M10.9083 16.6582L7.40829 20.1582C7.29163 20.2748 7.17496 20.3332 6.99996 20.3332C6.82496 20.3332 6.70829 20.2748 6.59163 20.1582L3.09163 16.6582C2.85829 16.4248 2.85829 16.0748 3.09163 15.8415C3.32496 15.6082 3.67496 15.6082 3.90829 15.8415L6.99996 18.9332L10.0916 15.8415C10.325 15.6082 10.675 15.6082 10.9083 15.8415C11.1416 16.0748 11.1416 16.4248 10.9083 16.6582Z" fill="currentColor" />
+                                    </svg>
+                                    <ul class="hidden mt-1 absolute -ml-12 bg-white rounded shadow">
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">edit</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">add</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">Select</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td tabindex="0" class="focus:outline-none text-xs font-semibold text-gray-800 dark:text-gray-100 pl-6 uppercase">
+                            <div class="flex items-center">
+                                View
+                                <div onkeypress="dropdownHandler(this)" tabindex="0" class="text-gray-300 focus:outline-none focus:text-indigo-600 pl-10 relative cursor-pointer" onclick="dropdownHandler(this)">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="25" viewBox="0 0 14 25" fill="none">
+                                        <path d="M10.9083 9.15817C10.7916 9.27484 10.675 9.33317 10.5 9.33317C10.325 9.33317 10.2083 9.27484 10.0916 9.15817L6.99996 6.0665L3.90829 9.15817C3.67496 9.3915 3.32496 9.3915 3.09163 9.15817C2.85829 8.92484 2.85829 8.57484 3.09163 8.3415L6.59163 4.8415C6.82496 4.60817 7.17496 4.60817 7.40829 4.8415L10.9083 8.3415C11.1416 8.57484 11.1416 8.92484 10.9083 9.15817Z" fill="currentColor" />
+                                        <path d="M10.9083 16.6582L7.40829 20.1582C7.29163 20.2748 7.17496 20.3332 6.99996 20.3332C6.82496 20.3332 6.70829 20.2748 6.59163 20.1582L3.09163 16.6582C2.85829 16.4248 2.85829 16.0748 3.09163 15.8415C3.32496 15.6082 3.67496 15.6082 3.90829 15.8415L6.99996 18.9332L10.0916 15.8415C10.325 15.6082 10.675 15.6082 10.9083 15.8415C11.1416 16.0748 11.1416 16.4248 10.9083 16.6582Z" fill="currentColor" />
+                                    </svg>
+                                    <ul class="hidden mt-1 absolute -ml-12 bg-white rounded shadow">
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">edit</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">add</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">Select</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td tabindex="0" class="focus:outline-none text-xs font-semibold text-gray-800 dark:text-gray-100 pl-6 uppercase">
+                            <div class="flex items-center">
+                                Revenue
+                                <div tabindex="0" onkeypress="dropdownHandler(this)" class="text-gray-300 focus:outline-none focus:text-indigo-600 pl-6 relative cursor-pointer" onclick="dropdownHandler(this)">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="25" viewBox="0 0 14 25" fill="none">
+                                        <path d="M10.9083 9.15817C10.7916 9.27484 10.675 9.33317 10.5 9.33317C10.325 9.33317 10.2083 9.27484 10.0916 9.15817L6.99996 6.0665L3.90829 9.15817C3.67496 9.3915 3.32496 9.3915 3.09163 9.15817C2.85829 8.92484 2.85829 8.57484 3.09163 8.3415L6.59163 4.8415C6.82496 4.60817 7.17496 4.60817 7.40829 4.8415L10.9083 8.3415C11.1416 8.57484 11.1416 8.92484 10.9083 9.15817Z" fill="currentColor" />
+                                        <path d="M10.9083 16.6582L7.40829 20.1582C7.29163 20.2748 7.17496 20.3332 6.99996 20.3332C6.82496 20.3332 6.70829 20.2748 6.59163 20.1582L3.09163 16.6582C2.85829 16.4248 2.85829 16.0748 3.09163 15.8415C3.32496 15.6082 3.67496 15.6082 3.90829 15.8415L6.99996 18.9332L10.0916 15.8415C10.325 15.6082 10.675 15.6082 10.9083 15.8415C11.1416 16.0748 11.1416 16.4248 10.9083 16.6582Z" fill="currentColor" />
+                                    </svg>
+                                    <ul class="hidden mt-1 absolute -ml-12 bg-white rounded shadow">
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">edit</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">add</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">Select</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td tabindex="0" class="focus:outline-none text-xs font-semibold text-gray-800 dark:text-gray-100 pl-6 uppercase sm:pr-6 pr-4">
+                            <div class="flex items-center">
+                                Sales
+                                <div onkeypress="dropdownHandler(this)" tabindex="0" class="text-gray-300 focus:outline-none focus:text-indigo-600 pl-6 relative cursor-pointer" onclick="dropdownHandler(this)">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="25" viewBox="0 0 14 25" fill="none">
+                                        <path d="M10.9083 9.15817C10.7916 9.27484 10.675 9.33317 10.5 9.33317C10.325 9.33317 10.2083 9.27484 10.0916 9.15817L6.99996 6.0665L3.90829 9.15817C3.67496 9.3915 3.32496 9.3915 3.09163 9.15817C2.85829 8.92484 2.85829 8.57484 3.09163 8.3415L6.59163 4.8415C6.82496 4.60817 7.17496 4.60817 7.40829 4.8415L10.9083 8.3415C11.1416 8.57484 11.1416 8.92484 10.9083 9.15817Z" fill="currentColor" />
+                                        <path d="M10.9083 16.6582L7.40829 20.1582C7.29163 20.2748 7.17496 20.3332 6.99996 20.3332C6.82496 20.3332 6.70829 20.2748 6.59163 20.1582L3.09163 16.6582C2.85829 16.4248 2.85829 16.0748 3.09163 15.8415C3.32496 15.6082 3.67496 15.6082 3.90829 15.8415L6.99996 18.9332L10.0916 15.8415C10.325 15.6082 10.675 15.6082 10.9083 15.8415C11.1416 16.0748 11.1416 16.4248 10.9083 16.6582Z" fill="currentColor" />
+                                    </svg>
+                                    <ul class="hidden mt-1 absolute -ml-12 bg-white rounded shadow">
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">edit</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">add</li>
+                                        <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs text-gray-800 dark:text-gray-100 hover:text-white hover:bg-indigo-700 py-2 px-4">Select</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </thead>
+                    <tbody class="bg-white dark:bg-gray-800">
+                        <tr class="border-b border-gray-200 dark:border-gray-900">
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div aria-label="briefcase icon" role="img" tabindex="0" class="focus:outline-none w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg1.svg" alt="dixons"/>
+                                    </div>
+                                    <div class="pl-5">
+                                        <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100 pb-2">Dixons</p>
+                                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400">meguc@ruj.io</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="monitor icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg7.svg" alt="technology"/>
+                                        
+                                    </div>
+                                    <p tabindex="0" class="focus:outline-none text-sm leading-tight text-gray-500 dark:text-gray-400 pl-3">Technology</p>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100">23.4k</p>
+                                <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400 pt-2">in 24 hours</p>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-gray-100">$891.2</p>
+                            </td>
+                            <td class="py-4 sm:px-6 px-4">
+                                <div class="flex items-center">
+                                    <p tabindex="0" class="focus:outline-none text-sm font-semibold pr-3 leading-none text-gray-800 dark:text-gray-100">68%</p>
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg10.svg" alt="down"/>
+                                   
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 dark:border-gray-900">
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg2.svg" alt="motels"/>
+                                    </div>
+                                    <div class="pl-5">
+                                        <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100 pb-2">Motels</p>
+                                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400">meguc@ruj.io</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="coffee icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg8.svg" alt="grocery"/>
+                                    </div>
+                                    <p tabindex="0" class="focus:outline-none text-sm leading-tight text-gray-500 dark:text-gray-400 pl-3">Grocery</p>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100">78k</p>
+                                <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400 pt-2">in 24 hours</p>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-gray-100">$668</p>
+                            </td>
+                            <td class="py-4 sm:px-6 px-4">
+                                <div class="flex items-center">
+                                    <p tabindex="0" class="focus:outline-none text-sm font-semibold pr-3 leading-none text-gray-800 dark:text-gray-100">97%</p>
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg11.svg" alt="up"/>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 dark:border-gray-900">
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    
+                                    <div role="img" aria-label="paint icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg3.svg" alt="zipcar"/>
+                                    </div>
+                                    <div class="pl-5">
+                                        <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100 pb-2">Zipcar</p>
+                                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400">meguc@ruj.io</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="watch-icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg9.svg" alt="fashion"/>
+                                    </div>
+                                    <p tabindex="0" class="focus:outline-none text-sm leading-tight text-gray-500 dark:text-gray-400 pl-3">Fashion</p>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100">162</p>
+                                <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400 pt-2">in 24 hours</p>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-gray-100">$522.2</p>
+                            </td>
+                            <td class="py-4 sm:px-6 px-4">
+                                <div class="flex items-center">
+                                    <p tabindex="0" class="focus:outline-none text-sm font-semibold pr-3 leading-none text-gray-800 dark:text-gray-100">98%</p>
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg10.svg" alt="down"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 dark:border-gray-900">
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="star icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg4.svg" alt="owing"/>
+                                    </div>
+                                    <div class="pl-5">
+                                        <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100 pb-2">Owing</p>
+                                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400">meguc@ruj.io</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="monitor icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg7.svg" alt="technology"/>
+                                    </div>
+                                    <p tabindex="0" class="focus:outline-none text-sm leading-tight text-gray-500 dark:text-gray-400 pl-3">Technology</p>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100">214</p>
+                                <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400 pt-2">in 24 hours</p>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-gray-100">$81.2</p>
+                            </td>
+                            <td class="py-4 sm:px-6 px-4">
+                                <div class="flex items-center">
+                                    <p tabindex="0" class="focus:outline-none text-sm font-semibold pr-3 leading-none text-gray-800 dark:text-gray-100">68%</p>
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg10.svg" alt="down"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 dark:border-gray-900">
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="book icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg5.svg" alt="cafes"/>
+                                    </div>
+                                    <div class="pl-5">
+                                        <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100 pb-2">Cafes</p>
+                                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400">meguc@ruj.io</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="coffee icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg8.svg" alt="grocery"/>
+                                    </div>
+                                    <p tabindex="0" class="focus:outline-none text-sm leading-tight text-gray-500 dark:text-gray-400 pl-3">Grocery</p>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100">78k</p>
+                                <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400 pt-2">in 24 hours</p>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-gray-100">$668</p>
+                            </td>
+                            <td class="py-4 sm:px-6 px-4">
+                                <div class="flex items-center">
+                                    <p tabindex="0" class="focus:outline-none text-sm font-semibold pr-3 leading-none text-gray-800 dark:text-gray-100">24%</p>
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg10.svg" alt="down"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 dark:border-gray-900">
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg6.svg" alt="kmart"/>
+                                    </div>
+                                    <div class="pl-5">
+                                        <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100 pb-2">Kmart</p>
+                                        <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400">meguc@ruj.io</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <div class="flex items-center">
+                                    <div role="img" aria-label="monitor icon" tabindex="0" class="focus:outline-none w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg7.svg" alt="technology"/>
+                                    </div>
+                                    <p tabindex="0" class="focus:outline-none text-sm leading-tight text-gray-500 dark:text-gray-400 pl-3">Technology</p>
+                                </div>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm font-semibold leading-none text-gray-800 dark:text-gray-100">990</p>
+                                <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-500 dark:text-gray-400 pt-2">in 24 hours</p>
+                            </td>
+                            <td class="py-4 sm:pl-6 pl-4">
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-gray-100">$891.2</p>
+                            </td>
+                            <td class="py-4 sm:px-6 px-4">
+                                <div class="flex items-center">
+                                    <p tabindex="0" class="focus:outline-none text-sm font-semibold pr-3 leading-none text-gray-800 dark:text-gray-100">68%</p>
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card89-svg11.svg" alt="up"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+            function dropdownHandler(element) {
+                let single = element.getElementsByTagName("ul")[0];
+                single.classList.toggle("hidden");
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="flex items-center justify-center w-full h-full py-12 px-4">
+            <div class="bg-white max-w-5xl w-full dark:bg-gray-800 shadow rounded py-6">
+                <p tabindex="0" class="focus:outline-none text-xl px-8 font-semibold leading-tight text-gray-800 dark:text-gray-100">Transaction History</p>
+                <div class="w-full mt-6 overflow-x-scroll md:overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="h-4 border-b border-gray-200 text-xs md:text-base font-medium leading-none text-gray-500 dark:text-gray-400">
+                                <td tabindex="0" class="focus:outline-none pl-8 pb-4">Payment</td>
+                                <td tabindex="0" class="focus:outline-none pb-4 pl-12">Order ID</td>
+                                <td tabindex="0" class="focus:outline-none pb-4 pl-9">Date&Time</td>
+                                <td tabindex="0" class="focus:outline-none pb-4 pl-8">Amount</td>
+                                <td tabindex="0" class="focus:outline-none pb-4 pl-12 pr-16">Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-xs md:text-base leading-3 dark:text-gray-100 text-gray-800">
+                                <td class="pl-8 pt-6">
+                                    <div class="flex items-center">
+                                        <div aria-label="dollar icon" role="img" tabindex="0" class="focus:outline-none flex items-center justify-center p-1 w-8 h-8 bg-green-100 border rounded-sm border-green-700">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card58-svg1.svg" alt="icon"/>
+                                        </div>
+                                        <p tabindex="0" class="focus:outline-none pl-3">Amount&nbsp;Recieved</p>
+                                    </div>
+                                </td>
+                                <td tabindex="0" class="focus:outline-none pt-6 pl-12">ID&nbsp;:&nbsp;1421412P&nbsp;-&nbsp;24SGE2&nbsp;-&nbsp;876TBJK</td>
+                                <td tabindex="0" class="focus:outline-none pt-6 pl-9">28th&nbsp;Feb,&nbsp;2021|&nbsp;03:52&nbsp;a.m</td>
+                                <td class="pt-6 pl-8">
+                                    <p tabindex="0" class="focus:outline-none text-xs md:text-base leading-none text-green-700">+ $130</p>
+                                </td>
+                                <td class="pl-12 pr-16 pt-6">
+                                    <div class="flex items-center justify-center w-20 h-5 bg-green-100 rounded-full">
+                                        <p tabindex="0" class="focus:outline-none text-xs font-medium leading-3 text-green-700">completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="text-xs md:text-base leading-3 dark:text-gray-100 text-gray-800">
+                                <td class="pl-8 pt-9">
+                                    <div class="flex items-center">
+                                        <div aria-label="dollar icon" role="img" tabindex="0" class="focus:outline-none flex items-center justify-center p-1 w-8 h-8 bg-yellow-100 border rounded-sm border-yellow-700">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card58-svg2.svg" alt="icon"/>
+                                           
+                                        </div>
+                                        <p tabindex="0" class="focus:outline-none pl-3">Amount Refund</p>
+                                    </div>
+                                </td>
+                                <td tabindex="0" class="focus:outline-none pt-9 pl-12">ID : 1421412P - 24SGE2 - 876TBJK</td>
+                                <td tabindex="0" class="focus:outline-none pt-9 pl-9">27th&nbsp;Feb,2021&nbsp;|&nbsp;08:48&nbsp;p.m</td>
+                                <td class="pt-9 pl-8">
+                                    <p tabindex="0" class="focus:outline-none text-xs md:text-base leading-none text-green-700">+ $280</p>
+                                </td>
+                                <td class="pl-12 pr-16 pt-9">
+                                    <div class="flex items-center justify-center w-20 h-5 bg-green-100 rounded-full">
+                                        <p tabindex="0" class="focus:outline-none text-xs font-medium leading-3 text-green-700">completed</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="text-xs md:text-base leading-3 dark:text-gray-100 text-gray-800">
+                                <td class="pl-8 pt-9">
+                                    <div class="flex items-center">
+                                        <div aria-label="truck icon" role="img" tabindex="0" class="focus:outline-none flex items-center justify-center p-1 w-8 h-8 bg-blue-100 border rounded-sm border-blue-800">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card58-svg3.svg" alt="icon"/>
+                                            
+                                        </div>
+                                        <p tabindex="0" class="focus:outline-none pl-3">Delivery Fee</p>
+                                    </div>
+                                </td>
+                                <td tabindex="0" class="focus:outline-none pt-9 pl-12">ID : 1421412P - 24SGE2 - 876TBJK</td>
+                                <td tabindex="0" class="focus:outline-none pt-9 pl-9">26th Feb, 2021 | 02:10 p.m</td>
+                                <td class="pt-9 pl-8">
+                                    <p tabindex="0" class="focus:outline-none text-xs md:text-base leading-none text-red-600">- $50</p>
+                                </td>
+                                <td class="pl-12 pr-16 pt-9">
+                                    <div class="flex items-center justify-center w-20 h-5 bg-yellow-100 rounded-full">
+                                        <p tabindex="0" class="focus:outline-none text-xs font-medium leading-3 text-yellow-700">ready</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="text-xs md:text-base leading-3 dark:text-gray-100 text-gray-800">
+                                <td class="pl-8 pt-9">
+                                    <div class="flex items-center">
+                                        <div aria-label="cancellation icon" role="img" tabindex="0" class="focus:outline-none flex items-center justify-center p-1 w-8 h-8 bg-red-200 border rounded-sm border-red-700">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card58-svg4.svg" alt="icon"/>
+                                            
+                                        </div>
+                                        <p tabindex="0" class="focus:outline-none pl-3">Cancellation&nbsp;Refund</p>
+                                    </div>
+                                </td>
+                                <td tabindex="0" class="focus:outline-none pt-9 pl-12">ID : 1421412P - 24SGE2 - 876TBJK</td>
+                                <td tabindex="0" class="focus:outline-none pt-9 pl-9">26th&nbsp;Feb,&nbsp;2021&nbsp;|&nbsp;02:10&nbsp;p.m</td>
+                                <td class="pt-9 pl-8">
+                                    <p tabindex="0" class="focus:outline-none text-xs md:text-base leading-none text-red-600">- $95</p>
+                                </td>
+                                <td class="pl-12 pr-16 pt-9">
+                                    <div class="flex items-center justify-center w-20 h-5 bg-red-100 rounded-full">
+                                        <p tabindex="0" class="focus:outline-none text-xs font-medium leading-3 text-red-700">refund</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

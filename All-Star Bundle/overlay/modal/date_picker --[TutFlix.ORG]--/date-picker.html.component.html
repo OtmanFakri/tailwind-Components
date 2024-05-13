@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Date Picker</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+    </head>
+    <body style="min-height: 850px" class="px-4 dark:bg-gray-900 flex items-center jutsify-center">
+        <div class="w-full flex justify-center py-12">
+            <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:bg-indigo-500 focus:outline-none mx-auto transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-4 sm:px-8 py-2 text-xs sm:text-sm" onclick="popuphandler(true)">Open Modal</button>
+        </div>
+        <div id="popup" class="z-50 fixed w-full flex justify-center inset-0">
+            <div onclick="popuphandler(false)" class="w-full h-full bg-gray-900 z-0 absolute inset-0"></div>
+            <div class="mx-auto container">
+                <div class="flex items-center justify-center h-full w-full px-4 sm:px-0">
+                    <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-md w-full fixed z-20">
+                        <div class="bg-gray-100 dark:bg-gray-600 rounded-tl-md rounded-tr-md px-8 py-7 flex items-center justify-between">
+                            <p tabindex="0" class="focus:outline-none text-base dark:text-white font-semibold">Select Range</p>
+                            <button onclick="popuphandler(false)" role="button" aria-label="close modal" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md focus:outline-none">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg1.svg" alt="icon"/>
+                                 
+                            </button>
+                        </div>
+                        <div class="px-8 py-5">
+                            <div class="flex items-center justify-between">
+                                <button role="button" aria-label="previous" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:outline-none">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg2.svg" alt="icon"/>
+                                   
+                                </button>
+                                <p tabindex="0" class="focus:outline-none text-lg font-bold text-gray-900 dark:text-white ">February</p>
+                                <button role="button" aria-label="next" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:outline-none">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg3.svg" alt="icon"/>
+                                   
+                                </button>
+                            </div>
+                            <div tabindex="0" aria-label="calendar" class="focus:outline-none min-w-full overflow-x-auto mt-9">
+                                <table class="w-full">
+                                    <thead class="text-sm text-indigo-700 w-full">
+                                        <tr>
+                                            <th>S</th>
+                                            <th>M</th>
+                                            <th>T</th>
+                                            <th>W</th>
+                                            <th>T</th>
+                                            <th>F</th>
+                                            <th>S</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="w-full target-body2">
+                                        <tr class="text-sm font-medium text-center">
+                                            <td>
+                                                <p class="py-1 text-gray-500">27</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 text-gray-500">28</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 text-gray-500">29</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 text-gray-500">30</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 text-gray-500">31</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 text-gray-800 dark:text-white ">1</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 text-gray-800 dark:text-white ">2</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center text-gray-800 dark:text-white ">
+                                            <td>
+                                                <p class="py-1 bg-indigo-700 rounded-tl-full rounded-bl-full text-white">3</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 bg-indigo-700 text-white -mx-1">4</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 bg-indigo-700 text-white -mx-1">5</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 bg-indigo-700 text-white -mx-1">6</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1 bg-indigo-700 rounded-tr-full rounded-br-full text-white">7</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">8</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">9</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center text-gray-800 dark:text-white ">
+                                            <td>
+                                                <p class="py-1">10</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">11</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">12</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">13</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">14</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">15</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">16</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center text-gray-800 dark:text-white ">
+                                            <td>
+                                                <p class="py-1">17</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">18</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">19</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">20</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">21</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">22</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">23</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center text-gray-800 dark:text-white ">
+                                            <td>
+                                                <p class="py-1">24</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">25</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">26</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">27</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">28</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">29</p>
+                                            </td>
+                                            <td>
+                                                <p class="py-1">30</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-11">
+                                <div class="flex items-center justify-center">
+                                    <div class="flex flex-col items-center w-full">
+                                        <p tabindex="0" class="focus:outline-none text-xl font-bold leading-tight text-gray-900 dark:text-white ">Increment</p>
+                                        <div class="flex flex-wrap items-center justify-center mt-4 -ml-2 w-full">
+                                            <div class="m-2 flex items-center">
+                                                <div class="bg-white bg-gray-200 border rounded-sm border-gray-300 w-3.5 h-3.5 flex flex-shrink-0 justify-center items-center relative">
+                                                    <input placeholder="checkbox" type="checkbox" class="focus:opacity-100 checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                                    <div class="check-icon hidden bg-indigo-700 text-white rounded-sm">
+                                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg4.svg" alt="icon"/>
+                                                       
+                                                    </div>
+                                                </div>
+                                                <p class="text-sm leading-none text-gray-900 dark:text-white  ml-2">Day</p>
+                                            </div>
+                                            <div class="m-2 flex items-center">
+                                                <div class="bg-white bg-gray-200 border rounded-sm border-gray-300 w-3.5 h-3.5 flex flex-shrink-0 justify-center items-center relative">
+                                                    <input placeholder="checkbox" type="checkbox" class="focus:opacity-100 checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                                    <div class="check-icon hidden bg-indigo-700 text-white rounded-sm">
+                                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg4.svg" alt="icon"/>
+                                                    </div>
+                                                </div>
+                                                <p class="text-sm leading-none text-gray-900 dark:text-white  ml-2">Week</p>
+                                            </div>
+                                            <div class="m-2 flex items-center">
+                                                <div class="bg-white bg-gray-200 border rounded-sm border-gray-300 w-3.5 h-3.5 flex flex-shrink-0 justify-center items-center relative">
+                                                    <input placeholder="checkbox" type="checkbox" class="focus:opacity-100 checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                                    <div class="check-icon hidden bg-indigo-700 text-white rounded-sm">
+                                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg4.svg" alt="icon"/>
+                                                    </div>
+                                                </div>
+                                                <p class="text-sm leading-none text-gray-900 dark:text-white  ml-2">Month</p>
+                                            </div>
+                                            <div class="m-2 flex items-center">
+                                                <div class="bg-white bg-gray-200 border rounded-sm border-gray-300 w-3.5 h-3.5 flex flex-shrink-0 justify-center items-center relative">
+                                                    <input placeholder="checkbox" type="checkbox" class="focus:opacity-100 checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                                    <div class="check-icon hidden bg-indigo-700 text-white rounded-sm">
+                                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/date_picker-svg4.svg" alt="icon"/>
+                                                    </div>
+                                                </div>
+                                                <p class="text-sm leading-none text-gray-900 dark:text-white  ml-2">Entire Range</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-9">
+                                <button onclick="popuphandler(false)" role="button" aria-label="close modal" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 px-6 py-3 bg-gray-600 hover:bg-gray-500 shadow rounded text-sm text-white">Cancel</button>
+                                <button role="button" aria-label="select" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 px-6 py-3 bg-indigo-700 hover:bg-opacity-80 shadow rounded text-sm text-white">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .checkbox:checked + .check-icon {
+                display: flex;
+            }
+        </style>
+    
+        <script>
+            function popuphandler(flag) {
+                if (flag) {
+                    document.getElementById("popup").classList.remove("hidden");
+                } else {
+                    document.getElementById("popup").classList.add("hidden");
+                }
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

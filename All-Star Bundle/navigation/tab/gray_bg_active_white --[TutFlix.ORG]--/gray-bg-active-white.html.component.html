@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabs</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="dark:bg-gray-900" style="font-family: 'Lato', sans-serif">
+        <div class="py-10">
+            <div class="container mx-auto">
+                <!--Code for navigation starts-->
+                <dh-component>
+                    <div class="sm:hidden w-11/12 mx-auto relative rounded">
+                        <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
+                            <img class="icon icon-tabler icon-tabler-selector" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/gray-bg-active-white-svg1.svg" alt="selector" />
+                        </div>
+                        <select aria-label="Selected tab" class="form-select block w-full dark:text-white p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative z-10">
+                            <option class="text-sm text-gray-600">inactive</option>
+                            <option class="text-sm text-gray-600">inactive</option>
+                            <option selected class="text-sm text-gray-600">Active</option>
+                            <option class="text-sm text-gray-600">inactive</option>
+                            <option class="text-sm text-gray-600">inactive</option>
+                        </select>
+                    </div>
+                    <div class="justify-between flex-wrap hidden sm:block shadow rounded">
+                        <div class="xl:w-full xl:mx-0 pl-5 pr-5 bg-gray-200 dark:bg-gray-800 h-12">
+                            <div class="flex items-center bg-gray-200 dark:bg-gray-800 h-full">
+                                <button onclick="activeTab(this)" class="focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-indigo-800  rounded-md hover:bg-white dark:focus:text-gray-800 dark:hover:text-gray-800 focus:bg-white text-sm text-gray-600 py-2 px-5 mr-10 font-normal hover:text-gray-800 cursor-pointer">inactive</button>
+                                <button onclick="activeTab(this)" class="focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-indigo-800  rounded-md hover:bg-white dark:focus:text-gray-800 dark:hover:text-gray-800 focus:bg-white text-sm text-gray-800 py-2 px-5 bg-white rounded-md mr-10 font-normal cursor-pointer">Active</button>
+                                <button onclick="activeTab(this)" class="focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-indigo-800  rounded-md hover:bg-white dark:focus:text-gray-800 dark:hover:text-gray-800 focus:bg-white text-sm text-gray-600 py-2 px-5 mr-10 font-normal hover:text-gray-800 cursor-pointer">inactive</button>
+                            </div>
+                        </div>
+                    </div>
+                </dh-component>
+                <!--Code for navigation ends-->
+            </div>
+            <script>
+                function activeTab(element) {
+                    let siblings = element.parentNode.querySelectorAll("button");
+                    for (let item of siblings) {
+                        item.classList.add("text-gray-600", "dark:text-gray-200");
+                        item.classList.remove("text-gray-800", "dark:text-white");
+                        item.classList.remove("bg-white");
+                        item.innerHTML = "Inactive";
+                    }
+                    element.classList.remove("text-gray-600", "dark:text-gray-200");
+                    element.classList.add("text-gray-800", "dark:text-white");
+                    element.classList.add("bg-white");
+                    element.innerHTML = "Active";
+                }
+            </script>
+            <script src="./index.js"></script>
+        </div>
+    </body>
+</html>

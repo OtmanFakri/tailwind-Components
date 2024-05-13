@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Progress</title>
+  </head>
+  <body class="bg-gray-100 py-12 px-4">
+    <div class="h-full w-full pt-12 bg-white lg:max-w-[1124px] mx-auto">
+      <div class="flex justify-between px-6 mb-8">
+        <p
+          class="lg:text-base md:text-base text-sm font-semibold leading-none text-gray-800"
+        >
+          Uploading in progress
+        </p>
+        <p
+          class="lg:text-sm md:text-sm text-xs font-medium leading-none text-gray-600"
+        >
+          30s left
+        </p>
+      </div>
+      <div class="mx-auto flex justify-center">
+        <div class="w-full h-2 bg-indigo-100 rounded-full">
+          <div
+            class="lg:w-7/12 md:w-7/12 w-8/12 bg-indigo-700 h-2 rounded relative"
+          >
+            <div class="absolute right-0 -top-16">
+              <div
+                class="relative bg-indigo-700 shadow-lg px-3 py-2 rounded mt-4 -mr-5"
+              >
+                <svg
+                  class="absolute -bottom-2 w-full right-0 left-0 rotate-180"
+                  width="16px"
+                  height="8px"
+                  viewBox="0 0 16 8"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Progress-Bars"
+                      transform="translate(-322.000000, -198.000000)"
+                      fill="#4338ca"
+                    >
+                      <g
+                        id="Group-4"
+                        transform="translate(310.000000, 198.000000)"
+                      >
+                        <polygon
+                          id="Triangle"
+                          points="20 0 28 8 12 8"
+                        ></polygon>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text-white text-xs font-bold">55%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

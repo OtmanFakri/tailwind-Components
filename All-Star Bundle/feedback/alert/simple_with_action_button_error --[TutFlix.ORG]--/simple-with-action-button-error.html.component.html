@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Alerts</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <!-- <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script> -->
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900 py-12" style="font-family: 'Lato', sans-serif">
+        <dh-component>
+            <!-- Code block starts -->
+            <div class="flex items-center justify-center px-4">
+                <div role="alert" id="alert" class="transition duration-150 ease-in-out w-full lg:w-11/12 mx-auto bg-white dark:bg-gray-800 shadow rounded flex flex-col items-center md:flex-row py-4 md:py-0 justify-between">
+                    <div class="flex flex-col items-center md:flex-row">
+                        <div class="mr-3 p-4 bg-red-400 rounded md:rounded-tr-none md:rounded-br-none text-white">
+                            <img class="focus:outline-none" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple-with-action-button-error-svg1.svg" alt="error" />
+                        </div>
+                        <p class="mr-2 text-base font-bold text-gray-800 dark:text-gray-100 mt-2 md:my-0">Error</p>
+                        <div class="h-1 w-1 bg-gray-300 dark:bg-gray-700 rounded-full mr-2 hidden xl:block"></div>
+                        <p class="text-sm lg:text-base dark:text-gray-400 text-gray-600 lg:pt-1 xl:pt-0 sm:mb-0 mb-2 text-center sm:text-left">A problem has occurred while submitting your data. Please try again later</p>
+                    </div>
+                    <div class="flex xl:items-center lg:items-center sm:justify-end justify-center pr-4">
+                        <button role="button" aria-label="details" class="text-sm mr-4 font-bold cursor-pointer focus:outline-none focus:text-indigo-400 hover:text-indigo-400  text-indigo-700 dark:text-indigo-600">Details</button>
+                        <button aria-label="dismiss" class="text-sm cursor-pointer focus:outline-none focus:text-gray-400 hover:text-gray-400 text-gray-600 dark:text-gray-400" onclick="closeAlert()">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Code block ends -->
+        </dh-component>
+        <script>
+            var Alert = document.getElementById("alert");
+            var close = document.getElementById("close-modal");
+            Alert.style.transform = "translateY(0%)";
+            function closeAlert() {
+                Alert.style.transform = "translateY(-200%)";
+                setTimeout(function () {
+                    Alert.style.transform = "translateY(0%)";
+                }, 1000);
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

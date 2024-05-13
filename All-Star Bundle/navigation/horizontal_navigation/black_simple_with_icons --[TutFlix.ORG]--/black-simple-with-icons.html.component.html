@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Horizontal Navigation 18</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200" style="font-family: 'Lato', sans-serif; height: 550px">
+        <div class="h-full w-full">
+            <!-- Code block starts -->   
+            <dh-component>
+                <nav class="bg-gray-800 hidden md:block shadow">
+                    <div class="container mx-auto px-6 py-1 xl:py-0">
+                        <div class="flex items-center justify-between">
+                            <div class="cursor-pointer inline-flex items-center justify-center rounded-md transition duration-150 ease-in-out">
+                                <div class="xl:hidden lg:flex items-center cursor-pointer py-6 mr-0 px-4 sm:px-10 md:border-l border-gray-700 text-gray-500 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                                    <ul class="p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-20 px-8 hidden">
+                                        <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                            <div class="flex items-center">
+                                                <div class="w-12 cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
+                                                    <img class="rounded h-10 w-10 object-cover" src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png" alt="logo" />
+                                                </div>
+                                                <p class="text-sm ml-2 cursor-pointer">Jane Doe</p>
+                                                <div class="sm:ml-2 text-white relative">
+                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg18.svg" alt="icon" />
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                                    <circle cx="12" cy="7" r="4" />
+                                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                                </svg>
+                                                <span class="ml-2">Profile</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <img aria-haspopup="true" aria-label="Main Menu" onclick="MenuHandler(this,true)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg2.svg" alt="menu" />
+                                        <div onclick="MenuHandler(this,false)" class="hidden close-m-menu h-6 w-6">
+                                            <img aria-label="Close" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg3.svg" alt="cross" />
+                                        </div>
+                                    </div>
+                                    <p class="pl-1 hidden md:flex text-white">Menu</p>
+                                </div>
+                                <div class="hidden lg:flex cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l border-r border-gray-700 text-gray-400 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out flex items-center relative">
+                                    <input type="text" class="bg-transparent focus:outline-none text-xs w-0 transition duration-150 ease-in-out absolute ml-8" placeholder="Type something..." />
+                                  
+                                    <svg tabindex="0" onkeypress="searchHandler(this)" onclick="searchHandler(this)"  xmlns="http://www.w3.org/2000/svg" class="focus:outline-none focus:text-indigo-700 icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="
+                                        currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="10" cy="10" r="7"></circle>
+                                        <line x1="21" y1="21" x2="15" y2="15"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div tabindex="0" class="focus:outline-none hidden lg:flex items-center">
+                                <img aria-label="Home" role="img" class="w-12 h-12" id="logo" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg5.svg" alt="north" />
+                            </div>
+                            <div class="hidden xl:flex items-center">
+                                <div class="cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l border-gray-700 p-1 text-gray-400 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" tabindex="0"  width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="
+                                        currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"></path>
+                                        <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2"></path>
+                                    </svg>
+                                </div>
+                                <div class="relative cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l border-r border-gray-700 p-1 text-gray-400 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                                   
+                                    <svg class="focus:outline-none focus:text-indigo-700 icon icon-tabler icon-tabler-bell" xmlns="http://www.w3.org/2000/svg" tabindex="0"  width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="
+                                        currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
+                                        <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+                                    </svg>
+                                    <div class="absolute top-0 right-0 mt-6 mr-4 sm:mr-10 pr-1 pt-1">
+                                        <div class="animate-ping w-2 h-2 rounded-full bg-red-400"></div>
+                                    </div>
+                                </div>
+                                <div class="ml-6 relative">
+                                    <button class="text-white focus:outline-none focus:text-indigo-700 flex items-center relative" onclick="dropdownHandler(this)">
+                                        <ul class="p-2 w-40 border-r bg-white absolute rounded left-0 shadow mt-16 top-0 hidden">
+                                            <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                                                <div class="flex items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                                        <circle cx="12" cy="7" r="4" />
+                                                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                                    </svg>
+                                                    <span tabindex="0" class="focus:outline-none focus:text-indigo-700 ml-2">My Profile</span>
+                                                </div>
+                                            </li>
+                                            <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                                    <circle cx="12" cy="12" r="9" />
+                                                    <line x1="12" y1="17" x2="12" y2="17.01" />
+                                                    <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+                                                </svg>
+                                                <span tabindex="0" class="focus:outline-none focus:text-indigo-700 ml-2">Help Center</span>
+                                            </li>
+                                            <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                                    <circle cx="12" cy="12" r="3" />
+                                                </svg>
+                                                <span tabindex="0" class="focus:outline-none focus:text-indigo-700 ml-2">Account Settings</span>
+                                            </li>
+                                        </ul>
+                                        <div class="cursor-pointer flex text-sm border-2 mr-2 border-transparent rounded focus:outline-none focus:border-gray-700 transition duration-150 ease-in-out">
+                                            <img class="rounded h-10 w-10 object-cover" src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png" alt="logo" />
+                                        </div>
+                                        <p class=" text-sm cursor-pointer">Jane Doe</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav>
+                    <div class="py-4 px-6 w-full flex lg:hidden justify-between items-center bg-gray-800 fixed top-0 z-40">
+                        <div aria-label="logo" role="img" tabindex="0" class="focus:outline-none w-24">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg5.svg" alt="north" />
+                        </div>
+                        <div>
+                            <button id="menu" aria-label="open menu" class="focus:outline-none focus:ring-2 focus:ring-white rounded-md text-white" onclick="sidebarHandler(true)">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg11.svg" alt="menu" />
+                            </button>
+                            <button id="cross" class="focus:ring-2 focus:ring-white rounded-md focus:outline-none hidden text-white" onclick="sidebarHandler(false)">
+                                <img aria-label="Close" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg3.svg" alt="cross" />
+                            </button>
+                        </div>
+                    </div>
+                    <!--Mobile responsive sidebar-->
+                    <div class="w-64 z-20 fixed overflow z-40 top-0 bg-gray-800 shadow h-screen h-full flex-col justify-between lg:hidden pb-12 transition duration-150 ease-in-out" id="mobile-nav">
+                        <div class="px-6">
+                            <div class="mt-6 flex w-full items-center justify-between">
+                                <div class="flex items-center">
+                                   <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg5.svg" alt="north" />
+                                    <p tabindex="0" class="focus:outline-none text-base text-white ml-3">The North</p>
+                                </div>
+                            </div>
+                            <ul class="f-m-m">
+                                
+                                    <li class="text-white pt-8">
+                                        <div class="flex items-center">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg12.svg" alt="dashoboard" />
+                                            <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-purple-700 ml-3">Dashboard</p>
+                                        </div>
+                                    </li>
+                               
+                                    <li class="text-white pt-8">
+                                        <div class="flex items-center">
+                                            <div class="flex items-center">
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg13.svg" alt="products" />
+                                                <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-white ml-3">Products</p>
+                                            </div>
+                                            <div id="chevronup" onclick="listHandler(true)" onkeypress="listHandler(true)" tabindex="0" class="focus:outline-none focus:text-indigo-600 ml-12">
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg14.svg" alt="up arrow" />
+                                            </div>
+                                            <div id="chevrondown" onclick="listHandler(false)" onkeypress="listHandler(false)" tabindex="0" class="focus:outline-none focus:text-indigo-600 hidden ml-12">
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg15.svg" alt="down arrow" />
+                                            </div>
+                                        </div>
+                                        <div id="list" class="hidden">
+                                            <ul class="my-3">
+                                                <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-sm text-indigo-500 hover:text-white py-2 px-6">Best Sellers</li>
+                                                <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-sm text-white hover:text-indigo-500 py-2 px-6">Out of Stock</li>
+                                                <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-sm text-white hover:text-indigo-500 py-2 px-6">New Products</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="text-white pt-8">
+                                        <div class="flex items-center">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg16.svg" alt="performance" />
+                                            <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-white ml-3">Performance</p>
+                                        </div>
+                                    </li>
+                               
+                                    <li class="text-white pt-8">
+                                        <div class="flex items-center">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/black-simple-with-icons-svg17.svg" alt="deliverables" />
+                                            <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-white ml-3">Deliverables</p>
+                                        </div>
+                                    </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <style>
+                    .text-purple-700 {
+                        color: #667eea;
+                    }
+
+                    .overflow {
+                        overflow-y: auto;
+                    }
+                </style>
+                <script>
+                    // ------------------------------------------------------
+                    let sideBar = document.getElementById("mobile-nav");
+                    let menu = document.getElementById("menu");
+                    let cross = document.getElementById("cross");
+                    sideBar.style.transform = "translateX(-260px)";
+                    const sidebarHandler = (check) => {
+                        if (check) {
+                            sideBar.style.transform = "translateX(0px)";
+                            menu.classList.add("hidden");
+                            cross.classList.remove("hidden");
+                        } else {
+                            sideBar.style.transform = "translateX(-260px)";
+                            menu.classList.remove("hidden");
+                            cross.classList.add("hidden");
+                        }
+                    };
+                    let list = document.getElementById("list");
+                    let chevrondown = document.getElementById("chevrondown");
+                    let chevronup = document.getElementById("chevronup");
+                    const listHandler = (check) => {
+                        if (check) {
+                            list.classList.remove("hidden");
+                            chevrondown.classList.remove("hidden");
+                            chevronup.classList.add("hidden");
+                        } else {
+                            list.classList.add("hidden");
+                            chevrondown.classList.add("hidden");
+                            chevronup.classList.remove("hidden");
+                        }
+                    };
+                    function dropdownHandler(element) {
+                        let single = element.getElementsByTagName("ul")[0];
+                        single.classList.toggle("hidden");
+                    }
+                    function MenuHandler(el, val) {
+                        let MainList = el.parentElement.parentElement.getElementsByTagName("ul")[0];
+                        let closeIcon = el.parentElement.parentElement.getElementsByClassName("close-m-menu")[0];
+                        let showIcon = el.parentElement.parentElement.getElementsByClassName("show-m-menu")[0];
+                        if (val) {
+                            MainList.classList.remove("hidden");
+                            el.classList.add("hidden");
+                            closeIcon.classList.remove("hidden");
+                        } else {
+                            showIcon.classList.remove("hidden");
+                            MainList.classList.add("hidden");
+                            el.classList.add("hidden");
+                        }
+                    }
+                    function searchHandler(element) {
+                        let Input = element.parentElement.getElementsByTagName("input")[0];
+                        element.parentElement.classList.toggle("border-r");
+                        Input.classList.toggle("w-0");
+                    }
+                </script>
+                <script src="./index.js"></script>
+            </dh-component>
+            <!-- Code block ends -->
+        </div>
+    </body>
+</html>

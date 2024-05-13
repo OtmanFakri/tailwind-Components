@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>List</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+    </head>
+    <body class="flex items-center dark:bg-gray-900 justify-center px-4 py-8">
+        <div class="xl:w-3/4 2xl:w-4/5 w-full">
+            <div class="px-4 md:px-10 py-4 md:py-7">
+                <div class="sm:flex items-center justify-between">
+                    <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800 dark:text-white ">Activity Board</p>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-900  px-4 md:px-10 pb-5">
+                <div>
+                    <div class="pb-2 border-b border-gray-200 dark:border-gray-700 ">
+                        <p tabindex="0" class="focus:outline-none text-xs font-medium leading-3 text-gray-600 dark:text-gray-200 ">08 January 2021</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-6 border-l border-dashed border-gray-200 dark:border-gray-700 "></div>
+                            <div class="px-3 py-2 bg-gray-100 dark:bg-gray-800  rounded-full">
+                                <p tabindex="0" class="focus:outline-none text-xs leading-none text-gray-600 dark:text-gray-200 ">16:01</p>
+                            </div>
+                            <div class="h-6 border-l border-dashed border-gray-200 dark:border-gray-700 "></div>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-gray-800  rounded py-6 px-6">
+                            <div class="flex items-center justify-between">
+                                <p tabindex="0" class="focus:outline-none text-base font-medium leading-none text-gray-800 dark:text-white ">New Card Added</p>
+                                <div class="relative">
+                                    <div class="dropdown-content mt-8 absolute hidden left-0 shadow-md z-10 w-32">
+                                        <ul class="bg-white dark:bg-gray-900  shadow rounded py-1">
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li>
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li>
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li>
+                                        </ul>
+                                    </div>
+                                    <button class="focus:outline-none" aria-label="dropdown" role="button">
+                                        <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list3-svg1.svg" alt="dots" />
+                                    </button>
+                                </div>
+                            </div>
+                            <p tabindex="0" class="focus:outline-none text-sm leading-5 text-gray-600 dark:text-gray-200  mt-2 sm:w-11/12">New comments are a great way to let your team know what they you are upto and how far along the project has progressed. It can also be valuable for someone that is looking for such information so that they are not lost and know what needs to be done next</p>
+                            <div class="flex items-center mt-5">
+                                <img tabindex="0" alt="girl avatar" class="focus:outline-none w-8 h-8 rounded-full shadow" src="https://cdn.tuk.dev/assets/templates/olympus/projects(15).png" />
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-white  ml-2">Anika Dias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-6 border-l border-dashed border-gray-200 dark:border-gray-700 "></div>
+                            <div class="px-3 py-2 bg-gray-100 dark:bg-gray-800  rounded-full">
+                                <p tabindex="0" class="focus:outline-none text-xs leading-none text-gray-600 dark:text-gray-200 ">16:01</p>
+                            </div>
+                            <div class="h-6 border-l border-dashed border-gray-200 dark:border-gray-700 "></div>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-gray-800  rounded py-6 px-6">
+                            <div class="flex items-center justify-between">
+                                <p tabindex="0" class="focus:outline-none text-base font-medium leading-none text-gray-800 dark:text-white ">
+                                    New attachments added in
+                                    <span class="text-indigo-700 dark:text-indigo-400">‘Wireframes MVP’</span>
+                                </p>
+                                <div class="relative">
+                                    <div class="dropdown-content mt-8 absolute hidden left-0 shadow-md z-10 w-32">
+                                        <ul class="bg-white dark:bg-gray-900  shadow rounded py-1">
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li>
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li>
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li>
+                                        </ul>
+                                    </div>
+                                    <button class="focus:outline-none" aria-label="dropdown" role="button">
+                                        <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list3-svg1.svg" alt="dots" />
+                                    </button>
+                                </div>
+                            </div>
+                            <p tabindex="0" class="focus:outline-none text-sm leading-5 text-gray-600 dark:text-gray-200  mt-2 sm:w-11/12">New comments are a great way to let your team know what they you are upto and how far along the project has progressed. It can also be valuable for someone that is looking for such information so that they are not lost and know what needs to be done next</p>
+                            <div class="flex items-center mt-6">
+                                <div tabindex="0" class="focus:outline-none w-12 h-12 sm:w-24 sm:h-24 rounded">
+                                    <img alt="image 1" src="https://cdn.tuk.dev/assets/templates/olympus/projects(16).png" />
+                                </div>
+                                <div tabindex="0" class="focus:outline-none w-12 h-12 sm:w-24 sm:h-24 ml-4 rounded">
+                                    <img alt="image 2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(17).png" />
+                                </div>
+                                <div tabindex="0" class="focus:outline-none w-12 h-12 sm:w-24 sm:h-24 ml-4 rounded">
+                                    <img alt="image 3" src="https://cdn.tuk.dev/assets/templates/olympus/projects(18).png" />
+                                </div>
+                                <div tabindex="0" class="focus:outline-none px-2 sm:px-6 py-4 sm:py-10 ml-4 rounded flex items-center justify-center border border-gray-300">
+                                    <p tabindex="0" class="focus:outline-none text-xs leading-none text-gray-600 dark:text-gray-200 ">+ 2 more</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mt-5">
+                                <img tabindex="0" alt="girl avatar" class="focus:outline-none w-8 h-8 rounded-full shadow" src="https://cdn.tuk.dev/assets/templates/olympus/projects(15).png" />
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-white  ml-2">Anika Dias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-6 border-l border-dashed border-gray-200 dark:border-gray-700 "></div>
+                            <div class="px-3 py-2 bg-gray-100 dark:bg-gray-800  rounded-full">
+                                <p tabindex="0" class="focus:outline-none text-xs leading-none text-gray-600 dark:text-gray-200 ">16:01</p>
+                            </div>
+                            <div class="h-6 border-l border-dashed border-gray-200 dark:border-gray-700 "></div>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-gray-800  rounded py-6 px-6">
+                            <div class="flex items-center justify-between">
+                                <p tabindex="0" class="focus:outline-none text-base font-medium leading-none text-gray-800 dark:text-white ">New Comment Added</p>
+                                <div class="relative">
+                                    <div class="dropdown-content mt-8 absolute hidden left-0 shadow-md z-10 w-32">
+                                        <ul class="bg-white dark:bg-gray-900  shadow rounded py-1">
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li>
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li>
+                                            <li class="cursor-pointer text-gray-600 dark:text-gray-200  leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li>
+                                        </ul>
+                                    </div>
+                                    <button class="focus:outline-none" aria-label="dropdown" role="button">
+                                       <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list3-svg1.svg" alt="dots" />
+                                    </button>
+                                </div>
+                            </div>
+                            <p tabindex="0" class="focus:outline-none text-sm leading-5 text-gray-600 dark:text-gray-200  mt-2 sm:w-11/12">New comments are a great way to let your team know what they you are upto and how far along the project has progressed. It can also be valuable for someone that is looking for such information so that they are not lost and know what needs to be done next</p>
+                            <div class="flex items-center mt-5">
+                                <img tabindex="0" alt="girl avatar" class="focus:outline-none w-8 h-8 rounded-full shadow" src="https://cdn.tuk.dev/assets/templates/olympus/projects(15).png" />
+                                <p tabindex="0" class="focus:outline-none text-sm leading-none text-gray-800 dark:text-white  ml-2">Anika Dias</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

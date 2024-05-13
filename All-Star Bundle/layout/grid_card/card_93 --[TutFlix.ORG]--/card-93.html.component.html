@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card 93</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900 flex justify-center py-8 sm:px-6 px-4">
+        <div class="sm:max-w-sm max-w-xs rounded shadow dark:bg-gray-800 bg-white">
+            <!-- Please include this script in the head section of your webpage to make the chart work.-->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+            <div class="sm:px-6 py-6 px-2 flex items-center">
+                <p tabindex="0" class="focus:outline-none text-xl font-medium leading-5 md:pr-36 pr-24 text-gray-600 dark:text-gray-100">Goal Overview</p>
+                <span tabindex="0" class="focus:outline-none" aria-label="information icon" role="img" >
+                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/card93-svg1.svg" alt="help"/>
+                </span> 
+            </div>
+            <div class="sm:px-7 px-2 relative">
+                <canvas tabindex="0" class="focus:outline-none" aria-label="chart" role="img" id="myChart" width="150" class="relative z-20"> </canvas>
+                <div tabindex="0" class="focus:outline-none absolute inset-0 z-0 flex flex-col items-center justify-center mt-14">
+                    <p class="text-5xl font-semibold leading-10 text-center text-gray-800 dark:text-gray-100">69%</p>
+                    <p class="text-2xl font-semibold leading-normal text-center pt-2 text-gray-500 dark:text-gray-400">complete</p>
+                </div>
+            </div>
+            <div class="w-full border-t border-gray-300 dark:border-gray-900 mt-8">
+                <div class="flex items-center justify-center">
+                    <div class="py-4 sm:pr-12 pr-4">
+                        <p tabindex="0" class="focus:outline-none text-sm leading-none text-center text-gray-500 dark:text-gray-400">Completed</p>
+                        <p tabindex="0" class="focus:outline-none text-xl font-semibold leading-5 py-3.5 text-center text-gray-800 dark:text-gray-100">786,617</p>
+                    </div>
+                    <div class="py-4 border-l border-gray-200 dark:border-gray-900">
+                        <div class="sm:pl-12 pl-4">
+                            <p tabindex="0" class="focus:outline-none text-sm leading-none text-center text-gray-500 dark:text-gray-400">In progress</p>
+                            <p tabindex="0" class="focus:outline-none text-xl font-semibold leading-5 py-3.5 text-center text-gray-800 dark:text-gray-100">76,617</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+        <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var green_blue_gradient = ctx.createLinearGradient(0, 0, 0, 300);
+            green_blue_gradient.addColorStop(0, "#6EE7B7");
+            green_blue_gradient.addColorStop(1, "#38BDF8");
+            var myChart = new Chart(ctx, {
+                type: "doughnut",
+                data: {
+                    labels: ["Purple"],
+                    datasets: [
+                        {
+                            label: "# of Votes",
+                            data: [86, 60],
+                            backgroundColor: [green_blue_gradient, "#E2E8F0"],
+                            borderColor: ["rgba(255, 255, 255 ,1)"],
+                            borderWidth: 0,
+                            borderRadius: 10,
+                        },
+                    ],
+                },
+                options: {
+                    rotation: 1 * Math.PI,
+                    circumference: 1 * Math.PI,
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        enabled: false,
+                    },
+                    cutoutPercentage: 85,
+                },
+            });
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

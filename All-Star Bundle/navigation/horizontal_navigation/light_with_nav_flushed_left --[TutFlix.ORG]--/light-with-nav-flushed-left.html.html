@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horizontal Navigation 7</title>
+    <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+    <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+  </head>
+
+  <body class="bg-gray-200" style="font-family: 'Lato', sans-serif; height: 550px"> 
+    <div class="h-full w-full"> 
+      <!-- Code block starts -->
+      <nav class="w-full mx-auto bg-white shadow xl:block hidden">
+        <div class="justify-between container px-6 h-16 flex items-center lg:items-stretch mx-auto">
+          <div class="flex items-center">
+            <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 rounded-md mr-10 flex items-center">
+              <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg1.svg" alt="logo" />
+              <h3 class="text-base text-gray-800 font-bold tracking-normal leading-tight mx-3 hidden lg:block">The North</h3>
+            </button>
+            <div class="pr-32 xl:flex hidden items-center h-full">
+              <a href="javascript:void(0)" class="focus:outline-none border-b-2 border-transparent focus:border-indigo-700 hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gray-800 tracking-normal">Dashboard</a>
+              <button class="focus:outline-none border-b-2 border-transparent focus:border-indigo-700 focus:text-indigo-700 cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gry-800 mx-10 tracking-normal relative" onclick="dropdownHandler(this)">
+                <ul class="bg-white shadow rounded py-1 w-32 left-0 mt-16 -ml-4 absolute hidden top-0">
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Templates</li>
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Components</li>
+                </ul>
+                Products
+                <span class="ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span>
+              </button>
+              <a href="javascript:void(0)" class="focus:outline-none border-b-2 border-transparent focus:text-indigo-700 focus:border-indigo-700 cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gry-800 mr-10 tracking-normal">Performance</a>
+              <button class="focus:outline-none border-b-2 border-transparent focus:border-indigo-700 focus:text-indigo-700 cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 tracking-normal relative" onclick="dropdownHandler(this)">
+                <ul class="bg-white shadow rounded py-1 w-32 left-0 mt-16 -ml-4 absolute hidden top-0">
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Templates</li>
+                  <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Components</li>
+                </ul>
+                Deliverables
+                <span class="ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span> 
+              </button>
+            </div>
+          </div>
+          <div class="h-full xl:flex hidden items-center justify-end">
+            <div class="h-full flex items-center">
+              <div class="w-32 pr-16 h-full flex items-center justify-end border-r"></div>
+              <div class="w-full h-full flex">
+                <button aria-label="open notifications" class="focus:outline-none focus:text-indigo-700 hover:text-indigo-700 focus:border-indigo-700 border-l w-32 h-full flex items-center justify-center border-r text-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                  </svg>
+                </button>
+                <div aria-label="dropdown" class="focus:outline-none focus:underline text-gray-800 hover:text-indigo-700 focus:text-indigo-700 w-full flex items-center justify-end relative cursor-pointer" onclick="dropdownHandler(this)">
+                  <ul class="p-2 w-40 border-r bg-white absolute rounded left-0 shadow mt-16 top-0 hidden">
+                    <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:outline-none">
+                      <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="12" cy="7" r="4" />
+                          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                        <span class="ml-2">My Profile</span>
+                      </div>
+                    </li>
+                    <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:outline-none flex items-center">
+                      <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="12" cy="12" r="9" />
+                          <line x1="12" y1="17" x2="12" y2="17.01" />
+                          <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+                        </svg>
+                        <span class="ml-2">Help Center</span>
+                      </div>
+                    </li>
+                    <li tabindex="0" class="focus:outline-none focus:bg-indigo-700 focus:text-white cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:outline-none">
+                      <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        <span class="ml-2">Account Settings</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <img class="rounded-full h-10 w-10 object-cover" src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_2.png" alt="logo" />
+                  <p class="text-sm ml-2">Jane Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visible xl:hidden cursor-pointer flex items-center">
+            <ul class="p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-12 md:mt-16 hidden">
+              <li class="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                <div class="flex items-center">
+                  <span class="ml-2 font-bold">Dashboard</span>
+                </div>
+              </li>
+              <li class="flex xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
+                <div class="flex items-center">
+                  <span class="ml-2 font-bold">Products</span>
+                </div>
+                <ul class="ml-2 mt-1 hidden">
+                  <li class="cursor-pointer text-gray-600 text-xs leading-3 tracking-normal py-2 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
+                  <li class="cursor-pointer text-gray-600 text-xs leading-3 tracking-normal py-2 hover:bg-indigo-700 hover:text-white px-3 font-normal">Templates</li>
+                  <li class="cursor-pointer text-gray-600 text-xs leading-3 tracking-normal pt-2 hover:bg-indigo-700 hover:text-white px-3 font-normal">Components</li>
+                </ul>
+              </li>
+
+              <li class="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                <span class="ml-2 font-bold">Performance</span>
+              </li>
+              <li class="border-b border-gray-300 flex xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
+                <div class="flex items-center">
+                  <span class="ml-2 font-bold">Deliverables</span>
+                </div>
+                <ul class="ml-2 mt-1 hidden">
+                  <li class="cursor-pointer text-gray-600 text-xs leading-3 tracking-normal py-2 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
+                  <li class="cursor-pointer text-gray-600 text-xs leading-3 tracking-normal py-2 hover:bg-indigo-700 hover:text-white px-3 font-normal">Templates</li>
+                  <li class="cursor-pointer text-gray-600 text-xs leading-3 tracking-normal pt-2 hover:bg-indigo-700 hover:text-white px-3 font-normal">Components</li>
+                </ul>
+              </li>
+              <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                <div class="flex items-center">
+                  <div class="w-12 cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
+                    <img class="rounded h-10 w-10 object-cover" src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png" alt="logo" />
+                  </div>
+                  <p class="text-sm ml-2 cursor-pointer">Jane Doe</p>
+                  <div class="sm:ml-2 text-white relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down cursor-pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"></path>
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
+                  <span class="ml-2">Profile</span>
+                </div>
+              </li>
+            </ul>
+            <div class="xl:hidden">
+              <img class="show-m-menu icon icon-tabler icon-tabler-menu" onclick="MenuHandler(this,true)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg2.svg" alt="icon" />
+              <div class="hidden close-m-menu" onclick="MenuHandler(this,false)">
+                <img  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg3.svg" alt="icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav>
+        <div class="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-0">
+          <div aria-label="logo" role="img" tabindex="0" class="focus:outline-none w-24">
+            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg4.svg" alt="logo" />
+          </div>
+          <div>
+            <button id="menu" aria-label="open menu" class="focus:ring-2 focus:ring-gray-600 focus:outline-none rounded-md text-gray-800" onclick="sidebarHandler(true)">
+              <img class="icon icon-tabler icon-tabler-menu-2" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg5.svg" alt="menu" />
+            </button>
+          </div>
+        </div>
+        <!--Mobile responsive sidebar-->
+        <div class="absolute top-0 w-full h-full transform -translate-x-full xl:hidden" id="mobile-nav">
+          <div class="bg-gray-800 opacity-50 w-full h-full" onclick="sidebarHandler(false)"></div>
+          <div class="w-64 z-40 fixed overflow-y-auto z-40 top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
+            <div class="px-6 h-full">
+              <div class="flex flex-col justify-between h-full w-full">
+                <div>
+                  <div class="mt-6 flex w-full items-center justify-between">
+                    <div class="flex items-center justify-between w-full">
+                      <div class="flex items-center">
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg4.svg" alt="logo" />
+                        <p tabindex="0" class="focus:outline-none text-base md:text-2xl text-gray-800 ml-3">The North</p>
+                      </div>
+                      <button id="cross" aria-label="close menu" class="focus:outline-none focus:ring-2 rounded-md hidden text-gray-800" onclick="sidebarHandler(false)">
+                        <img class="icon icon-tabler icon-tabler-x" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg6.svg" alt="cross" />
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="f-m-m">
+                    <li>
+                      <a class="cursor-pointer">
+                        <div class="text-white pt-8">
+                          <div class="flex items-center">
+                            <div class="w-6 h-6 md:w-8 md:h-8 text-indigo-700">
+                              <img class="icon icon-tabler icon-tabler-grid" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg7.svg" alt="dashboard" />
+                            </div>
+                            <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-indigo-700 xl:text-base text-base ml-3">Dashboard</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="cursor-pointer">
+                        <div class="text-gray-800 pt-8">
+                          <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                              <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                <img class="icon icon-tabler icon-tabler-puzzle" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg8.svg" alt="products" />
+                              </div>
+                              <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Products</p>
+                            </div>
+                            <div tabindex="0" class="focus:outline-none focus:text-indigo-600" id="chevronup" onkeypress="listHandler(true)" onclick="listHandler(true)">
+                              <img class="icon icon-tabler icon-tabler-chevron-down" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg9.svg" alt="chevron down" />
+                            </div>
+                            <div id="chevrondown" onclick="listHandler(false)" onkeypress="listHandler(false)" tabindex="0" class="focus:outline-none focus:text-indigo-600 hidden">
+                              <img class="icon icon-tabler icon-tabler-chevron-up" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg10.svg" alt="chevron up" />
+                            </div>
+                          </div>
+                          <div id="list" class="hidden">
+                            <ul class="my-3">
+                              <li tabindex="0" class="focus:outline-none focus:text-indigo-600 xl:text-base md:text-2xl text-base text-indigo-500 hover:text-gray-800 py-2 px-6">Best Sellers</li>
+                              <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base hover:text-indigo-500 py-2 px-6">Out of Stock</li>
+                              <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base hover:text-indigo-500 py-2 px-6">New Products</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="cursor-pointer">
+                        <div class="text-gray-800 pt-8">
+                          <div class="flex items-center">
+                            <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                              <img class="icon icon-tabler icon-tabler-compass" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg11.svg" alt="performance" />
+                            </div>
+                            <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Performance</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="cursor-pointer">
+                        <div class="text-gray-800 pt-8">
+                          <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                              <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                <img src="../svgs/light-with-nav-flushed-left-svg12.svg" alt="deliverables" />
+                              </div>
+                              <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Deliverables</p>
+                            </div>
+                            <div id="chevronup2" tabindex="0" onkeypress="listHandler2(true)" class="focus:outline-none focus:text-indigo-600" onclick="listHandler2(true)">
+                              <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg9.svg" alt="chevron up" />
+                            </div>
+                            <div id="chevrondown2" onclick="listHandler2(false)" onkeypress="listHandler2(false)" tabindex="0" class="focus:outline-none focus:text-indigo-600 hidden">
+                              <img class="icon icon-tabler icon-tabler-chevron-up" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg13.svg" alt="chevron down" />
+                            </div>
+                          </div>
+                          <div id="list2" class="hidden">
+                            <ul class="my-3">
+                              <li tabindex="0" class="focus:outline-none focus:text-indigo-600 xl:text-base md:text-2xl text-base text-indigo-500 hover:text-gray-800 py-2 px-6">Best Sellers</li>
+                              <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base hover:text-indigo-500 py-2 px-6">Out of Stock</li>
+                              <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base hover:text-indigo-500 py-2 px-6">New Products</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-full pt-4">
+                  <div class="flex justify-center mb-4 w-full">
+                    <div class="relative w-full">
+                      <div class="text-gray-500 absolute ml-4 inset-0 m-auto w-4 h-4">
+                       <img class="icon icon-tabler icon-tabler-search" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg14.svg" alt="search" />
+                      </div>
+                      <input class="focus:ring-2 focus:ring-gray-700 bg-gray-100 focus:outline-none rounded w-full text-sm text-gray-500 pl-10 py-2" type="text" placeholder="Search" />
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-700">
+                    <div class="w-full flex items-center justify-between pt-1">
+                      <div class="flex items-center">
+                        <img alt="profile-pic" src="https://tuk-cdn.s3.amazonaws.com/assets/components/boxed_layout/bl_1.png" tabindex="0" class="focus:outline-none w-8 h-8 rounded-md" />
+                        <p tabindex="0" class="focus:outline-nonetext-gray-800 text-base leading-4 ml-2">Jane Doe</p>
+                      </div>
+                      <ul class="flex">
+                        <li class="cursor-pointer text-gray-800 pt-5 pb-3">
+                          <div tabindex="0" class="focus:outline-none focus:text-indigo-600 w-6 h-6 md:w-8 md:h-8">
+                           <img class="icon icon-tabler icon-tabler-messages" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg15.svg" alt="chat" />
+                          </div>
+                        </li>
+                        <li class="cursor-pointer text-gray-800 pt-5 pb-3 pl-3">
+                          <div tabindex="0" class="focus:outline-none focus:text-indigo-600 w-6 h-6 md:w-8 md:h-8">
+                            <img class="icon icon-tabler icon-tabler-bell" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light-with-nav-flushed-left-svg16.svg" alt="bell"/>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        function dropdownHandler(element) {
+          let single = element.getElementsByTagName("ul")[0];
+          single.classList.toggle("hidden");
+        }
+        function MenuHandler(el, val) {
+          let MainList = el.parentElement.parentElement.getElementsByTagName("ul")[0];
+          let closeIcon = el.parentElement.parentElement.getElementsByClassName("close-m-menu")[0];
+          let showIcon = el.parentElement.parentElement.getElementsByClassName("show-m-menu")[0];
+          if (val) {
+            MainList.classList.remove("hidden");
+            el.classList.add("hidden");
+            closeIcon.classList.remove("hidden");
+          } else {
+            showIcon.classList.remove("hidden");
+            MainList.classList.add("hidden");
+            el.classList.add("hidden");
+          }
+        }
+        // ------------------------------------------------------
+        let sideBar = document.getElementById("mobile-nav");
+        let menu = document.getElementById("menu");
+        let cross = document.getElementById("cross");
+        const sidebarHandler = (check) => {
+          if (check) {
+            sideBar.style.transform = "translateX(0px)";
+            menu.classList.add("hidden");
+            cross.classList.remove("hidden");
+          } else {
+            sideBar.style.transform = "translateX(-100%)";
+            menu.classList.remove("hidden");
+            cross.classList.add("hidden");
+          }
+        };
+        let list = document.getElementById("list");
+        let chevrondown = document.getElementById("chevrondown");
+        let chevronup = document.getElementById("chevronup");
+        const listHandler = (check) => {
+          if (check) {
+            list.classList.remove("hidden");
+            chevrondown.classList.remove("hidden");
+            chevronup.classList.add("hidden");
+          } else {
+            list.classList.add("hidden");
+            chevrondown.classList.add("hidden");
+            chevronup.classList.remove("hidden");
+          }
+        };
+        let list2 = document.getElementById("list2");
+        let chevrondown2 = document.getElementById("chevrondown2");
+        let chevronup2 = document.getElementById("chevronup2");
+        const listHandler2 = (check) => {
+          if (check) {
+            list2.classList.remove("hidden");
+            chevrondown2.classList.remove("hidden");
+            chevronup2.classList.add("hidden");
+          } else {
+            list2.classList.add("hidden");
+            chevrondown2.classList.add("hidden");
+            chevronup2.classList.remove("hidden");
+          }
+        };
+      </script>
+      <script src="./index.js"></script>
+      <!-- Code block ends -->
+    </div>
+  </body>
+</html>

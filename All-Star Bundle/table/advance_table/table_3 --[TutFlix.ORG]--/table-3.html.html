@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+    </head>
+    <body class="flex items-center dark:bg-gray-900 justify-center py-8 px-2">
+        <div class="w-full sm:px-6">
+            <div class="px-4 md:px-10 py-4 md:py-7 bg-gray-100 dark:bg-gray-700 rounded-tl-lg rounded-tr-lg">
+                <div class="sm:flex items-center justify-between">
+                    <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800 dark:text-white ">Projects</p>
+                    <div>
+                        <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 inline-flex sm:ml-3 mt-4 sm:mt-0 items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded">
+                            <p class="text-sm font-medium leading-none text-white">New Project</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800  shadow px-4 md:px-10 pt-4 md:pt-7 pb-5 overflow-y-auto">
+                <table class="w-full whitespace-nowrap">
+                    <thead>
+                        <tr tabindex="0" class="focus:outline-none h-16 w-full text-sm leading-none text-gray-800 dark:text-white ">
+                            <th class="font-normal text-left pl-4">Project</th>
+                            <th class="font-normal text-left pl-12">Progress</th>
+                            <th class="font-normal text-left pl-12">Tasks</th>
+                            <th class="font-normal text-left pl-20">Budget</th>
+                            <th class="font-normal text-left pl-20">Deadline</th>
+                            <th class="font-normal text-left pl-16">Members</th>
+                        </tr>
+                    </thead>
+                    <tbody class="w-full">
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  border-b border-t border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects.png" alt="UX Design and Visual Strategy" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">UX Design &amp; Visual Strategy</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Herman Group</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">72%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-20 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="w-5 focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  dark:hover:bg-gray-900    border-gray-100 dark:border-gray-700 ">
+                            <td class=" pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(1).png"alt="Branding" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">Branding</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Cassin, Bradtke and Jacobson</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">18%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-6 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">09/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="rounded-md focus:outline-none focus:ring-2 ml-7" role="button" aria-label="option">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  dark:hover:bg-gray-900  dark:bg-gray-700  border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(2).png" alt="dev ops"/>
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">Dev Ops</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Weissnat Group</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">28%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-8 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900    border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(3).png" alt="backend services" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">Backend Services</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Hoeger - Hirthe</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">94%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-24 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  dark:bg-gray-700  border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(4).png" alt="UI design" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">UI Design</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Batz - Yundt</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">81%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-20 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  dark:bg-gray-700  border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(5).png" alt="UX stradegy"/>
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">UX Strategy</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Erdman Group</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">37%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-14 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  dark:bg-gray-700  border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(6).png" alt="Website Development"/>
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">Website Development</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">Dickens - Pacocha</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">58%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-16 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 dark:text-white  border-b border-t bg-white dark:bg-gray-800  hover:bg-gray-100 dark:hover:bg-gray-900  dark:bg-gray-700  border-gray-100 dark:border-gray-700 ">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10">
+                                        <img class="w-full h-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(7).png" alt="Mobile App Development"/>
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="font-medium">Mobile App Development</p>
+                                        <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  pt-2">O'Kon Inc</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">42%</p>
+                                <div class="w-24 h-3 bg-gray-100 dark:bg-gray-700  rounded-full mt-2">
+                                    <div class="w-12 h-3 bg-green-progress rounded-full"></div>
+                                </div>
+                            </td>
+                            <td class="pl-12">
+                                <p class="font-medium">32/47</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  dark:text-gray-200  mt-2">5 tasks pending</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">$13,000</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  dark:text-gray-200  mt-2">$4,200 left</p>
+                            </td>
+                            <td class="pl-20">
+                                <p class="font-medium">22.12.21</p>
+                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200  dark:text-gray-200  mt-2">34 days</p>
+                            </td>
+                            <td class="pl-16">
+                                <div class="flex items-center">
+                                    <img class="shadow-md w-8 h-8 rounded-full" src="https://cdn.tuk.dev/assets/templates/olympus/projects(8).png" alt="collaborator 1" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(9).png" alt="collaborator 2" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(10).png" alt="collaborator 3" />
+                                    <img class="shadow-md w-8 h-8 rounded-full -ml-2" src="https://cdn.tuk.dev/assets/templates/olympus/projects(11).png" alt="collaborator 4" />
+                                </div>
+                            </td>
+                            <td class="px-7 2xl:px-0">
+                                <button onclick="dropdownFunction(this)" class="focus:ring-2 rounded-md focus:outline-none ml-7" role="button" aria-label="options">
+                                   <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_3-svg1.svg" alt="dropdown">
+                                </button>
+                                <div class="dropdown-content bg-white dark:bg-gray-800  shadow w-24 absolute z-30 right-0 mr-6 hidden">
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Edit</p>
+                                    </div>
+                                    <div tabindex="0" class="focus:outline-none focus:text-indigo-600 text-xs w-full hover:bg-indigo-700 py-4 px-4 cursor-pointer hover:text-white">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+        <script>
+            function dropdownFunction(element) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                let list = element.parentElement.parentElement.getElementsByClassName("dropdown-content")[0];
+                list.classList.add("target");
+                for (i = 0; i < dropdowns.length; i++) {
+                    if (!dropdowns[i].classList.contains("target")) {
+                        dropdowns[i].classList.add("hidden");
+                    }
+                }
+                list.classList.toggle("hidden");
+            }
+        </script>
+    </body>
+</html>

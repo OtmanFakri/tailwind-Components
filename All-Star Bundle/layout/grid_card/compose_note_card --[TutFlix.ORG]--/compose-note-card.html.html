@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900 py-12"> 
+        <div id="btn" class="hidden flex justify-center items-center ">
+            <button  onclick="Popup(true)" class=" mx-auto bg-gray-800 text-white px-4 py-2 rounded cursor-pointer">Show Card</button>
+        </div>
+        <div  id="popup" class="flex w-full justify-center">
+            <div class="bg-white dark:bg-gray-800 shadow-lg w-full md:w-11/12 pt-12 mb-10 px-10 max-w-2xl z-50">
+                <div class="container flex flex-col w-full h-full justify-between">
+                    <div>
+                        <div class="flex w-full justify-between items-center">
+                            <h2 tabindex="0" class="focus:outline-none text-4xl font-bold text-gray-900 dark:text-gray-100">Compose Note</h2>
+                            <div onclick="Popup(false)" tabindex="0" class="focus:outline-none focus:ring-2 focus:ring-indigo-600 block lg:hidden ml-5">
+                                <img class="cursor-pointer" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg1.svg" alt="icon"/>
+                               
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start md:flex-row w-full md:items-center py-1 bg-gray-100 dark:bg-gray-800 mt-12">
+                            <div class="relative">
+                                <button class="focus:ring-2 focus:outline-none flex items-center justify-between border rounded ml-2 border-gray-300 w-28 cursor-pointer" data-menu>
+                                    <p class="px-3 py-3 text-gray-600 dark:text-gray-400 text-sm leading-3 tracking-normal font-normal">Paragraph</p>
+                                    <div class="cursor-pointer text-gray-600 dark:text-gray-400 mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg2.svg" alt="icon"/>
+                                        
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg3.svg" alt="icon"/>
+                                       
+                                    </div>
+                                </button>
+                                <ul class="transition duration-300 invisible opacity-0 bg-white dark:bg-gray-700 shadow rounded py-1 w-28 ml-2 absolute">
+                                    <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-600 dark:text-gray-400 font-bold text-sm leading-3 tracking-normal py-3 px-3">Heading 1</li>
+                                    <li tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-600 dark:text-gray-400 font-bold text-sm leading-3 tracking-normal py-3 px-3">Heading 2</li>
+                                </ul>
+                            </div>
+                            <div class="flex text-gray-800 dark:text-gray-400 items-center mt-4 lg:mt-0">
+                                <div tabindex="0" aria-label="bold" role="button" class="focus:outline-none focus:ring-2 w-10 h-10 cursor-pointer px-2 bg-gray-200 dark:bg-gray-700 ml-2 flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg4.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div  aria-label="italic" role="button" tabindex="0" class="focus:ring-2 focus:outline-none w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg5.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div aria-label="copy link" role="button" tabindex="0" class="focus:outline-none focus:ring-2 w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg6.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div aria-label="unordered list" role="button" tabindex="0" class="focus:ring-2 focus:outline-none w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg7.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div aria-label="ordered list" role="button" tabindex="0" class="focus:ring-2 focus:outline-none w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg8.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div tabindex="0" aria-label="add pic" role="button" class="focus:outline-none focus:ring-2 w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg9.svg" alt="icon"/>
+                                    
+                                </div>
+                            </div>
+                            <div class="flex text-gray-800 dark:text-gray-400 items-center">
+                                <div tabindex="0" aria-label="quotation" role="button" class="focus:outline-none focus:ring-2 w-10 h-10 ml-2 md:ml-0 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg10.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div tabindex="0" aria-label="table" role="button" class="focus:outline-none focus:ring-2 w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg11.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div aria-label="add video" role="button" tabindex="0" class="focus:outline-none focus:ring-2 w-10 h-10 cursor-pointer bg-transparent ml-2 flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg12.svg" alt="icon"/>
+                                   
+                                </div>
+                                <div aria-label="undo" role="button" tabindex="0" class="focus:outline-none focus:ring-2 w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg13.svg" alt="icon"/>
+                                    
+                                </div>
+                                <div aria-label="redo" role="button" tabindex="0" class="focus:outline-none focus:ring-2  w-10 h-10 cursor-pointer bg-transparent flex items-center justify-center">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg14.svg" alt="icon"/>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10 border-b border-gray-400">
+                            <input class=" w-full text-base lg:text-2xl bg-transparent font-bold pb-2 focus:outline-none placeholder-gray-400" placeholder="Weekend Plan and Errands" type="text" />
+                        </div>
+                        <div tabindex="0" class="focus:outline-none text-sm text-gray-800 dark:text-gray-100 mt-8">
+                            <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                            <br />
+                            <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain</p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="checkbox items-center cursor-pointer flex">
+                                <label class="text-base dark:text-gray-400"> <input class="mr-4" type="checkbox" value="" />Add tasks to list </label>
+                            </div>
+                            <div class="checkbox mt-4 items-center cursor-pointer flex">
+                                <label class="text-base dark:text-gray-400"> <input class="mr-4" type="checkbox" value="" />Get grocery </label>
+                            </div>
+                            <div class="checkbox mt-4 items-center cursor-pointer flex">
+                                <label class="text-base dark:text-gray-400"> <input class="mr-4" type="checkbox" value="" />Take the kids to the park </label>
+                            </div>
+                            <div class="checkbox mt-4 items-center cursor-pointer flex">
+                                <label class="text-base dark:text-gray-400"> <input class="mr-4" type="checkbox" value="" />Get my car washed </label>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <p class="text-blue-500 text-sm underline cursor-pointer"><a href="javascript:void(0)" class="focus:outline-none focus:text-indigo-900">https://www.interaction-design.org/literature/article/10-great-sites-for-ui-design-patterns?utm_source=facebook&amp;utm_medium=sm</a></p>
+                            <p class="mt-4 text-blue-500 text-sm underline cursor-pointer"><a href="javascript:void(0)" class="focus:outline-none focus:text-indigo-900">https://www.interaction-design.org/literature/article/10-great-sites-for-ui-design-patterns?utm_source=facebook&amp;utm_medium=sm</a></p>
+                        </div>
+                        <div class="mt-8 flex items-center">
+                            <div class="w-12 h-12 rounded-full">
+                                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/components/todos/profile1.png" alt="girl avatar" />
+                            </div>
+                            <div class="w-12 h-12 -ml-4 rounded-full">
+                                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/components/todos/profile2.png" alt="man avatar" />
+                            </div>
+                            <div class="w-12 h-12 -ml-4 rounded-full">
+                                <img tabindex="0" class="focus:outline-none" src="https://cdn.tuk.dev/assets/components/todos/profile3.png" alt="boy avatar" />
+                            </div>
+                        </div>
+                        <div class="flex w-20 items-center border py-1 px-3 border-gray-300 rounded-md my-9">
+                            <div class="w-2 h-2 bg-indigo-700 rounded-full mr-2"></div>
+                            <p tabindex="0" class="focus:outline-none text-xs text-gray-900 dark:text-gray-100">Family</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <div>
+                            <p tabindex="0" class="focus:outline-none text-base text-indigo-700 dark:text-indigo-600 mb-6">This task is scheduled for 9th September 2020 at 18:00</p>
+                        </div>
+                        <div class="md:flex justify-between w-full py-4 border-t border-gray-400">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-end text-gray-700 dark:text-gray-400">
+                                    <div aria-label="tag icon" role="button" tabindex="0" class="focus:outline-none mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg15.svg" alt="icon"/>
+                                        
+                                    </div>
+                                    <div aria-label="bell icon" role="button" tabindex="0" class="focus:outline-none mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg16.svg" alt="icon"/>
+                                        
+                                    </div>
+                                    <div aria-label="calandar icon" role="button" tabindex="0" class="focus:outline-none mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg17.svg" alt="icon"/>
+                                        
+                                    </div>
+                                    <div tabindex="0" aria-label="add user icon" role="button" class="focus:outline-none mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg18.svg" alt="icon"/>
+                                       
+                                    </div>
+                                    <div tabindex="0" aria-label="archive icon" role="button" class="focus:outline-none mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg19.svg" alt="icon"/>
+                                       
+                                    </div>
+                                    <div tabindex="0" aria-label="dots" role="button" class="focus:outline-none mr-3">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/compose_note_card-svg20.svg" alt="icon"/>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <button onclick="Popup_review(true)" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 text-sm text-white focus:outline-none py-3 px-6 bg-indigo-700 rounded-md">Save Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function Popup(flag){
+                if(flag === true){
+                    document.getElementById('popup').classList.remove('hidden');
+                    document.getElementById('btn').classList.add('hidden');
+                    return;
+                }
+                document.getElementById('popup').classList.add('hidden');
+                document.getElementById('btn').classList.remove('hidden');
+            }
+
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

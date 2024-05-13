@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+    </head>
+    <body class="flex items-center justify-center bg-gray-50 dark:bg-gray-900 px-8 py-16">
+        <div class="mx-8 lg:w-11/12 w-full overflow-x-auto">
+            <table class="w-full whitespace-nowrap border-gray-100 dark:border-gray-600    border rounded-lg">
+                <thead class="bg-gray-100 dark:bg-gray-700 ">
+                    <tr tabindex="0" class="focus:outline-none">
+                        <th class="text-left py-5 pl-4 rounded-tl-lg">
+                            <p class="text-sm font-medium leading-none text-gray-900 dark:text-white">Date</p>
+                        </th>
+                        <th class="text-left py-5">
+                            <p class="text-sm font-medium leading-none text-gray-900 dark:text-white">Customer name/number</p>
+                        </th>
+                        <th class="text-left py-5 pl-5 border-l border-gray-200 dark:border-gray-600   ">
+                            <p class="text-sm font-medium leading-none text-gray-900 dark:text-white">Order #</p>
+                        </th>
+    
+                        <th class="text-left py-5 pr-16">
+                            <div class="flex items-center">
+                                <p class="text-sm font-medium pr-0.5 leading-none text-gray-900 dark:text-white">Units per order</p>
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_5-svg1.svg" alt="dropdown">
+                            </div>
+                        </th>
+                        <th class="text-left py-5 pr-16">
+                            <div class="flex items-center">
+                                <p class="text-sm font-medium pr-0.5 leading-none text-gray-900 dark:text-white">Cost per order</p>
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_5-svg1.svg" alt="dropdown">
+                            </div>
+                        </th>
+                        <th class="text-left py-5"><p class="text-sm font-medium leading-none text-gray-900 dark:text-white">Unit Cost</p></th>
+                        <th class="flex items-end justify-end rounded-tr-lg">
+                            <button role="button" aria-label="add a column" class="rounded-tr-lg py-5 px-4 hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none bg-indigo-700 flex items-center">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_5-svg2.svg" alt="plus">
+                                <p class="text-sm font-medium leading-none text-white pl-2">Add Column</p>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr tabindex="0" class="focus:outline-none" >
+                        <td class="pb-5 pt-8 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="pb-5 pt-8 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    pb-5 pt-8">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="pb-5 pt-8 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="pb-5 pt-8 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="pb-5 pt-8 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="pb-5 pt-8"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none bg-gray-100 dark:bg-gray-700 ">
+                        <td class="py-3 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-3 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-3">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-3 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-3"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none"> 
+                        <td class="py-5 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-5 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-5">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-5 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-5"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none bg-gray-100 dark:bg-gray-700 ">
+                        <td class="py-3 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-3 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-3">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-3 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-3"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none">
+                        <td class="py-5 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-5 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-5">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-5 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-5"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none bg-gray-100 dark:bg-gray-700 ">
+                        <td class="py-3 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-3 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-3">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-3 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-3"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none">
+                        <td class="py-5 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-5 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-5">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-5 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-5"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none bg-gray-100 dark:bg-gray-700 ">
+                        <td class="py-3 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-3 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-3">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-3 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-3"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none">
+                        <td class="py-5 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-5 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-5">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-5 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-5"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none bg-gray-100 dark:bg-gray-700 ">
+                        <td class="py-3 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-3 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-3">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-3 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-3"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none">
+                        <td class="py-5 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-5 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-5">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-5 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-5 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-5"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none bg-gray-100 dark:bg-gray-700 ">
+                        <td class="py-3 pr-20 pl-4">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">20/04/2020</p>
+                        </td>
+                        <td class="py-3 pr-12">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">Jon Strak &nbsp; 0381 9201716</p>
+                        </td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-3">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">#41523</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">541</p>
+                        </td>
+                        <td class="py-3 pr-16">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$6,471</p>
+                        </td>
+                        <td class="py-3 pr-10">
+                            <p class="text-sm leading-none text-gray-900 dark:text-white">$2,471</p>
+                        </td>
+                        <td class="py-3"></td>
+                    </tr>
+                    <tr tabindex="0" class="focus:outline-none">
+                        <td class="py-2 pr-20 pl-4"></td>
+                        <td class="py-2 pr-12"></td>
+                        <td class="border-l pl-5 pr-20 border-gray-200 dark:border-gray-600    py-2"></td>
+                        <td class="py-2 pr-16"></td>
+                        <td class="py-2 pr-16"></td>
+                        <td class="py-2 pr-10"></td>
+                        <td class="py-2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <style>
+            ::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            ::-webkit-scrollbar-track {
+                border-radius: 4;
+                background-color: white;
+                border-radius: 4px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #6b7280;
+                border-radius: 4px;
+                width: 326px;
+            }
+            
+        </style>
+    </body>
+</html>

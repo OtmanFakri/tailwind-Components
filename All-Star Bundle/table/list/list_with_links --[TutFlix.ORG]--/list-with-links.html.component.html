@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="">
+        <div class=" dark:bg-gray-900">
+        <div class="mx-auto container px-6 ">
+            <div  class="w-full  pt-10 pb-24">
+                <table class="min-w-full bg-gray-200 ">
+                    <tbody>
+                        <tr class="h-20">
+                            <td class="w-6 pr-2">
+                                <div class="w-10 flex dark:text-gray-100 text-gray-800 items-center">
+                                    <img class="dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1dark.svg" alt="vertical dots" />
+                                    <img class="dark:hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2dark.svg" alt="vertical dots" />
+                                </div>
+                            </td>
+                            <td class="text-left whitespace-no-wrap text-gray-800 tracking-normal leading-4 pr-6 w-6">
+                                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                                    <input placeholder="check box" type="checkbox" class="checkbox focus:opacity-100 opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div class="check-icon hidden bg-yellow-400 text-white rounded-sm">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg3.svg" alt="check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-20">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.tuk.dev/assets/components/todos/Bitmap.png" alt="logo" srcset="" />
+                                    <div class="ml-4">
+                                        <h3 class="text-lg text-gray-800 dark:text-gray-100">How to design a wireframe in Figma</h3>
+                                        <a href="javascript:void(0)" class="focus:outline-none focus:underline text-gray-600 hover:text-gray-500 focus:text-gray-500"><h4 class="text-sm  dark:text-gray-400 mt-1">https://www.figma.com/community?tab=files</h4></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><button aria-label="forward" class="focus:bg-white hover:bg-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg4.svg" alt="forward arrow" />
+                            </button>
+                            </td>
+                            <td><button aria-label="erase" class="focus:bg-white hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg5.svg" alt="erase" />
+                            </button>
+                            </td>
+                            <td class="relative w-5">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" role="button" aria-label="options" class=" hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500  text-gray-500 dark:text-gray-400  cursor-pointer rounded">
+                                    <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg6.svg" alt="dots" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="h-20">
+                            <td class="w-6 pr-2">
+                                <div class="flex dark:text-gray-100 text-gray-800 items-center">
+                                   <img class="dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1dark.svg" alt="vertical dots" />
+                                    <img class="dark:hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2dark.svg" alt="vertical dots" />
+                                </div>
+                            </td>
+                            <td class="text-left whitespace-no-wrap text-gray-800 tracking-normal leading-4 pr-6 w-6">
+                                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                                    <input placeholder="check box" type="checkbox" class="checkbox focus:opacity-100 opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div class="check-icon hidden bg-yellow-400 text-white rounded-sm">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg3.svg" alt="check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-20">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.tuk.dev/assets/components/todos/Bitmap.png" alt="logo" srcset="" />
+                                    <div class="ml-4">
+                                        <h3 class="text-lg text-gray-800 dark:text-gray-100">How to design a wireframe in Figma</h3>
+                                        <a href="javascript:void(0)" class="focus:outline-none focus:underline text-gray-600 hover:text-gray-500 focus:text-gray-500"><h4 class="text-sm  dark:text-gray-400 mt-1">https://www.figma.com/community?tab=files</h4></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><button aria-label="forward" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg4.svg" alt="forward arrow" />
+                            </button>
+                            </td>
+                            <td><button aria-label="erase" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg5.svg" alt="erase" />
+                                </button>
+                            </td>
+                            <td class="relative w-5">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" role="button" aria-label="options" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500  text-gray-500 dark:text-gray-400  cursor-pointer rounded">
+                                    <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg6.svg" alt="dots" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="h-20">
+                            <td class="w-6 pr-2">
+                                <div class="flex dark:text-gray-100 text-gray-800 items-center">
+                                    <img class="dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1dark.svg" alt="vertical dots" />
+                                    <img class="dark:hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2dark.svg" alt="vertical dots" />
+                                </div>
+                            </td>
+                            <td class="text-left whitespace-no-wrap text-gray-800 tracking-normal leading-4 pr-6 w-6">
+                                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                                    <input placeholder="check box" type="checkbox" class="checkbox focus:opacity-100 opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div class="check-icon hidden bg-yellow-400 text-white rounded-sm">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg3.svg" alt="check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-20">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.tuk.dev/assets/components/todos/Bitmap.png" alt="logo" srcset="" />
+                                    <div class="ml-4">
+                                        <h3 class="text-lg text-gray-800 dark:text-gray-100">How to design a wireframe in Figma</h3>
+                                        <a href="javascript:void(0)" class="focus:outline-none focus:underline text-gray-600 hover:text-gray-500 focus:text-gray-500"><h4 class="text-sm  dark:text-gray-400 mt-1">https://www.figma.com/community?tab=files</h4></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><button aria-label="forward" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg4.svg" alt="forward arrow" />
+                            </button>
+                            </td>
+                            <td><button aria-label="erase" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg5.svg" alt="erase" />
+                                </button>
+                            </td>
+                            <td class="relative w-5">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" role="button" aria-label="options" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500  text-gray-500 dark:text-gray-400  cursor-pointer rounded">
+                                   <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg6.svg" alt="dots" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="h-20">
+                            <td class="w-6 pr-2">
+                                <div class="w-10 flex dark:text-gray-100 text-gray-800 items-center">
+                                    <img class="dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1dark.svg" alt="vertical dots" />
+                                    <img class="dark:hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2dark.svg" alt="vertical dots" />
+                                </div>
+                            </td>
+                            <td class="text-left whitespace-no-wrap text-gray-800 tracking-normal leading-4 pr-6 w-6">
+                                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                                    <input placeholder="check box" type="checkbox" class="checkbox focus:opacity-100 opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div class="check-icon hidden bg-yellow-400 text-white rounded-sm">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg3.svg" alt="check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-20">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.tuk.dev/assets/components/todos/Bitmap.png" alt="logo" srcset="" />
+                                    <div class="ml-4">
+                                        <h3 class="text-lg text-gray-800 dark:text-gray-100">How to design a wireframe in Figma</h3>
+                                        <a href="javascript:void(0)" class="focus:outline-none focus:underline text-gray-600 hover:text-gray-500 focus:text-gray-500"><h4 class="text-sm  dark:text-gray-400 mt-1">https://www.figma.com/community?tab=files</h4></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><button aria-label="forward" class="focus:bg-white hover:bg-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg4.svg" alt="forward arrow" class="max-w-none">
+                            </button>
+                            </td>
+                            <td><button aria-label="erase" class="focus:bg-white hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg5.svg" alt="erase" class="max-w-none" >
+                            </button>
+                            </td>
+                            <td class="relative w-5">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" role="button" aria-label="options" class=" hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500  text-gray-500 dark:text-gray-400  cursor-pointer rounded">
+                                    <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg6.svg" alt="dots" class="max-w-none">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="h-20">
+                            <td class="w-6 pr-2">
+                                <div class="flex dark:text-gray-100 text-gray-800 items-center">
+                                    <img class="dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1dark.svg" alt="vertical dots" />
+                                    <img class="dark:hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2dark.svg" alt="vertical dots" />
+                                </div>
+                            </td>
+                            <td class="text-left whitespace-no-wrap text-gray-800 tracking-normal leading-4 pr-6 w-6">
+                                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                                    <input placeholder="check box" type="checkbox" class="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div class="check-icon hidden bg-yellow-400 text-white rounded-sm">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg3.svg" alt="check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-20">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.tuk.dev/assets/components/todos/Bitmap.png" alt="logo" srcset="" />
+                                    <div class="ml-4">
+                                        <h3 class="text-lg text-gray-800 dark:text-gray-100">How to design a wireframe in Figma</h3>
+                                        <a href="javascript:void(0)" class="focus:outline-none focus:underline text-gray-600 hover:text-gray-500 focus:text-gray-500"><h4 class="text-sm  dark:text-gray-400 mt-1">https://www.figma.com/community?tab=files</h4></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><button aria-label="forward" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg4.svg" alt="forward arrow" />
+                            </button>
+                            </td>
+                            <td><button aria-label="erase" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg5.svg" alt="erase" />
+                                </button>
+                            </td>
+                            <td class="relative w-5">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" role="button" aria-label="options" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500  text-gray-500 dark:text-gray-400  cursor-pointer rounded">
+                                   <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg6.svg" alt="dots" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="h-20">
+                            <td class="w-6 pr-2">
+                                <div class="flex dark:text-gray-100 text-gray-800 items-center">
+                                    <img class="dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg1dark.svg" alt="vertical dots" />
+                                    <img class="dark:hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2.svg" alt="vertical dots" />
+                                    <img class="dark:block hidden -ml-3" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg2dark.svg" alt="vertical dots" />
+                                </div>
+                            </td>
+                            <td class="text-left whitespace-no-wrap text-gray-800 tracking-normal leading-4 pr-6 w-6">
+                                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                                    <input placeholder="check box" type="checkbox" class="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div class="check-icon hidden bg-yellow-400 text-white rounded-sm">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg3.svg" alt="check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-20">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.tuk.dev/assets/components/todos/Bitmap.png" alt="logo" srcset="" />
+                                    <div class="ml-4">
+                                        <h3 class="text-lg text-gray-800 dark:text-gray-100">How to design a wireframe in Figma</h3>
+                                        <a href="javascript:void(0)" class="focus:outline-none focus:underline text-gray-600 hover:text-gray-500 focus:text-gray-500"><h4 class="text-sm  dark:text-gray-400 mt-1">https://www.figma.com/community?tab=files</h4></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><button aria-label="forward" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg4.svg" alt="forward arrow" />
+                            </button>
+                            </td>
+                            <td><button aria-label="erase" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg5.svg" alt="erase" />
+                                </button>
+                            </td>
+                            <td class="relative w-5">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                         <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer text-gray-600 dark:text-gray-400 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" role="button" aria-label="options" class="hover:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500  text-gray-500 dark:text-gray-400  cursor-pointer rounded">
+                                    <img onclick="dropdownFunction(this)" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/list-with-links-svg6.svg" alt="dots" />
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <style>
+            .checkbox:checked + .check-icon {
+                display: flex;
+            }
+        </style>
+        <script>
+            function dropdownFunction(element) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                let list = element.parentElement.parentElement.getElementsByClassName("dropdown-content")[0];
+                for (i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].classList.add("hidden");
+                }
+                list.classList.toggle("hidden");
+            }
+            window.onclick = function (event) {
+                if (!event.target.matches(".dropbtn")) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        openDropdown.classList.add("hidden");
+                    }
+                }
+            };
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

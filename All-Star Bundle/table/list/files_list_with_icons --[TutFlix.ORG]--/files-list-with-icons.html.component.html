@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="mx-auto container px-6">
+            <div>
+                <div class="py-12">
+                    <button aria-label="dropdown" data-menu="" class="focus:outline-none flex mt-6 items-center cursor-pointer focus:text-indigo-500 hover:text-indigo-500 text-gray-900 dark:text-gray-100">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden icon icon-tabler icon-tabler-chevron-up" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <polyline points="6 15 12 9 18 15"></polyline>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <h1 class="text-lg font-semibold ml-3">Files</h1>
+                    </button>
+                    <div class="mt-8">
+                        <div class="flex items-center w-full justify-between mt-8">
+                            <div class="flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg1.svg" alt="zip" />
+                                <a class="text-gray-900 dark:text-gray-100 ml-4 focus:outline-none hover:text-indigo-500 focus:underline focus:text-indigo-500" href="javascript:void(0)"><h2 class="text-xl">Fonts.zip</h2></a>
+                            </div>
+                            <div class="relative">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"><li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Edit</li></a>
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"> <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Delete</li></a>
+                                        <a href="javascript:void(0)" class="focus:underline focus:outline-none"> <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Duplicate</li></a>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="dropdown">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg2.svg" alt="dots" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full justify-between mt-6">
+                            <div class="flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg3.svg" alt="tasks" />
+                                <a class="text-gray-900 dark:text-gray-100 ml-4 focus:outline-none hover:text-indigo-500 focus:underline focus:text-indigo-500" href="javascript:void(0)"><h2 class="text-xl">Tasks list web app.sketch</h2></a>
+                            </div>
+                            <div class="relative">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Edit</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Delete</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Duplicate</a></li>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="dropdown">
+                                   <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg2.svg" alt="dots" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full justify-between mt-6">
+                            <div class="flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg4.svg" alt="task" />
+                                <a class="text-gray-900 dark:text-gray-100 ml-4 focus:outline-none hover:text-indigo-500 focus:underline focus:text-indigo-500" href="javascript:void(0)javascript:void(0)"><h2 class="text-xl">Tasks list web app.sketch</h2></a>
+                            </div>
+                            <div class="relative">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Edit</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Delete</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Duplicate</a></li>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="dropdown">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg2.svg" alt="dots" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full justify-between mt-6">
+                            <div class="flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg5.svg" alt="project" />
+                                <a class="text-gray-900 dark:text-gray-100 ml-4 focus:outline-none hover:text-indigo-500 focus:underline focus:text-indigo-500" href="javascript:void(0)"><h2 class="text-xl">Project file.psd</h2></a>
+                            </div>
+                            <div class="relative">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Edit</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Delete</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Duplicate</a></li>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="dropdown">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg2.svg" alt="dots" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full justify-between mt-6">
+                            <div class="flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg6.svg" alt="symbol" />
+                                <a class="text-gray-900 dark:text-gray-100 ml-4 focus:outline-none hover:text-indigo-500 focus:underline focus:text-indigo-500" href="javascript:void(0)"><h2 class="text-xl">Symbols.sketch</h2></a>
+                            </div>
+                            <div class="relative">
+                                <div class="dropdown-content mt-8 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Edit</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Delete</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Duplicate</a></li>
+                                    </ul>
+                                </div>
+                                <button onfocus="dropdownFunction(this)" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="dropdown">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/files-list-with-icon-svg2.svg" alt="dots" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let elements = document.querySelectorAll("[data-menu]");
+            for (let i = 0; i < elements.length; i++) {
+                let main = elements[i];
+                main.addEventListener("click", function () {
+                    let element = main.parentElement.parentElement;
+                    let andicators = main.querySelectorAll("svg");
+                    let child = element.querySelector("ul");
+                    child.classList.toggle("hidden");
+                    if (child.classList[1] !== "hidden") {
+                        andicators[1].style.display = "block";
+                        andicators[0].style.display = "none";
+                    } else {
+                        andicators[1].style.display = "none";
+                        andicators[0].style.display = "block";
+                    }
+                });
+            }
+            function dropdownFunction(element) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                let list = element.parentElement.parentElement.getElementsByClassName("dropdown-content")[0];
+                for (i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].classList.add("hidden");
+                }
+                list.classList.toggle("hidden");
+            }
+            window.onclick = function (event) {
+                if (!event.target.matches(".dropbtn")) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        openDropdown.classList.add("hidden");
+                    }
+                }
+            };
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>
